@@ -1,0 +1,379 @@
+CSS BASICS - 10 PROGRAMS
+==========================
+
+PROGRAM 1: BASIC CSS STYLING
+----------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic CSS</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS</h1>
+    <p>CSS is used to style HTML pages.</p>
+</body>
+</html>
+
+Explanation:
+- CSS means Cascading Style Sheets.
+- CSS is used to change the appearance of HTML elements.
+- <style> contains internal CSS.
+- color changes the text color.
+- font-size changes the size of the text.
+- A CSS rule has a selector and properties.
+
+
+PROGRAM 2: BACKGROUND AND TEXT COLOR
+------------------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colors</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Example</h1>
+    <p>This paragraph has a different text color.</p>
+</body>
+</html>
+
+Explanation:
+- background-color changes the background color.
+- color changes the text color.
+- CSS color names such as green and darkblue can be used.
+- The body selector applies the style to the whole page.
+
+
+PROGRAM 3: FONT STYLING
+-----------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Styling</title>
+    <style>
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: Georgia, serif;
+            font-size: 18px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font Example</h1>
+    <p>This text uses different font properties.</p>
+</body>
+</html>
+
+Explanation:
+- font-family changes the type of font.
+- font-size changes the text size.
+- font-weight controls how thick the text is.
+- font-style can make text italic.
+- Multiple font properties can be used together.
+
+
+PROGRAM 4: TEXT ALIGNMENT
+-------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Alignment</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Alignment</h1>
+    <p class="left">This text is aligned to the left.</p>
+    <p class="right">This text is aligned to the right.</p>
+    <p class="justify">
+        CSS can align text in different ways. Justified text spreads the
+        words across the available width.
+    </p>
+</body>
+</html>
+
+Explanation:
+- text-align controls the horizontal alignment of text.
+- left places text on the left.
+- right places text on the right.
+- center places text in the center.
+- justify spreads text across the available width.
+- class is used to apply a particular CSS rule to selected elements.
+
+
+PROGRAM 5: CSS BORDERS
+----------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Border Example</title>
+    <style>
+        .box {
+            border: 3px solid black;
+            padding: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box with a border.
+    </div>
+</body>
+</html>
+
+Explanation:
+- border adds a line around an element.
+- 3px is the border thickness.
+- solid is the border style.
+- black is the border color.
+- padding creates space between the text and the border.
+- width sets the width of the box.
+
+
+PROGRAM 6: MARGIN AND PADDING
+----------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Margin and Padding</title>
+    <style>
+        .box1 {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .box2 {
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Box One</div>
+    <div class="box2">Box Two</div>
+</body>
+</html>
+
+Explanation:
+- padding creates space inside an element.
+- margin creates space outside an element.
+- background-color changes the background.
+- The two boxes have different margin and padding values.
+- Margin and padding are important parts of the CSS box model.
+
+
+PROGRAM 7: CSS BUTTON
+---------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Styling</title>
+    <style>
+        button {
+            background-color: blue;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+</body>
+</html>
+
+Explanation:
+- button selects all button elements.
+- background-color changes the button background.
+- color changes the button text color.
+- padding makes the button larger.
+- border-radius rounds the corners.
+- cursor: pointer changes the mouse cursor.
+- :hover applies a style when the mouse is over the button.
+
+
+PROGRAM 8: CSS FLEXBOX
+----------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            background-color: lightgray;
+        }
+
+        .box {
+            background-color: orange;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+    </div>
+</body>
+</html>
+
+Explanation:
+- display: flex activates Flexbox.
+- justify-content controls the horizontal arrangement.
+- align-items controls the vertical alignment.
+- Flexbox is useful for arranging elements in rows or columns.
+- The three boxes are placed inside the flex container.
+
+
+PROGRAM 9: CSS GRID
+-------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">One</div>
+        <div class="item">Two</div>
+        <div class="item">Three</div>
+        <div class="item">Four</div>
+        <div class="item">Five</div>
+        <div class="item">Six</div>
+    </div>
+</body>
+</html>
+
+Explanation:
+- display: grid activates CSS Grid.
+- grid-template-columns creates three equal columns.
+- 1fr means one equal part of the available space.
+- gap creates space between grid items.
+- Grid is useful for creating rows and columns.
+
+
+PROGRAM 10: SIMPLE CARD DESIGN
+------------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Design</title>
+    <style>
+        .card {
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            border: 1px solid gray;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px gray;
+            text-align: center;
+        }
+
+        .card h2 {
+            color: darkblue;
+        }
+
+        .card p {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Student Card</h2>
+        <p>Name: Rahul</p>
+        <p>Course: Web Development</p>
+        <button>View Profile</button>
+    </div>
+</body>
+</html>
+
+Explanation:
+- .card selects the element with class card.
+- width sets the card size.
+- padding adds space inside the card.
+- margin: 50px auto centers the card horizontally.
+- border creates a simple outline.
+- border-radius makes rounded corners.
+- box-shadow adds a shadow.
+- .card h2 styles only the h2 inside the card.
+- This example combines common CSS properties to create a simple card.

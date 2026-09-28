@@ -1,0 +1,1291 @@
+CSS BASICS - 20 PROGRAMS WITH LINE-BY-LINE EXPLANATIONS
+=======================================================
+
+FORMAT USED FOR EVERY PROGRAM
+1. Complete program
+2. Line-by-line explanation in very simple English
+3. Short result/what to observe
+
+PROGRAM 1: Text Color
+---------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    color: blue;
+}
+p {
+    color: green;
+}
+</style>
+</head>
+<body>
+<h1>CSS Basics</h1>
+<p>CSS changes text color.</p>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <head>
+Explanation: Starts the head section.
+Line 4: <style>
+Explanation: Starts an internal CSS section.
+Line 5: h1 {
+Explanation: Selects all h1 elements.
+Line 6:     color: blue;
+Explanation: Starts the h1 rule.
+Line 7: }
+Explanation: Sets the text color to blue.
+Line 8: p {
+Explanation: Ends the h1 rule.
+Line 9:     color: green;
+Explanation: Selects all p elements.
+Line 10: }
+Explanation: Starts the p rule.
+Line 11: </style>
+Explanation: Sets paragraph text to green.
+Line 12: </head>
+Explanation: Ends the p rule.
+Line 13: <body>
+Explanation: Ends the style section.
+Line 14: <h1>CSS Basics</h1>
+Explanation: Ends the head.
+Line 15: <p>CSS changes text color.</p>
+Explanation: Starts visible content.
+Line 16: </body>
+Explanation: Creates the heading.
+Line 17: </html>
+Explanation: Creates the paragraph.
+
+RESULT / WHAT TO OBSERVE:
+The heading becomes blue and the paragraph becomes green.
+
+================================================================================
+
+PROGRAM 2: Background and Font
+------------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+</style>
+</head>
+<body>
+<h1>Styled Page</h1>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <head>
+Explanation: Starts the head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: body {
+Explanation: Selects the body.
+Line 6:     background-color: lightgray;
+Explanation: Starts the body rule.
+Line 7:     font-family: Arial, sans-serif;
+Explanation: Sets a light gray background.
+Line 8: }
+Explanation: Sets Arial as the preferred font, with sans-serif as a backup.
+Line 9: h1 {
+Explanation: Ends the rule.
+Line 10:     text-align: center;
+Explanation: Selects h1.
+Line 11:     font-size: 36px;
+Explanation: Starts the h1 rule.
+Line 12: }
+Explanation: Centers the heading text.
+Line 13: </style>
+Explanation: Makes the heading 36 pixels high.
+Line 14: </head>
+Explanation: Ends the rule.
+Line 15: <body>
+Explanation: Ends CSS.
+Line 16: <h1>Styled Page</h1>
+Explanation: Ends head.
+Line 17: </body>
+Explanation: Starts body.
+Line 18: </html>
+Explanation: Creates the heading.
+
+RESULT / WHAT TO OBSERVE:
+The page gets a gray background and centered, larger text.
+
+================================================================================
+
+PROGRAM 3: CSS Class
+--------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.highlight {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+<p class="highlight">Important message</p>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .highlight {
+Explanation: Selects elements whose class is highlight.
+Line 6:     background-color: yellow;
+Explanation: Starts the class rule.
+Line 7:     color: black;
+Explanation: Makes the background yellow.
+Line 8:     padding: 10px;
+Explanation: Makes the text black.
+Line 9: }
+Explanation: Adds 10 pixels of inside space.
+Line 10: </style>
+Explanation: Ends the rule.
+Line 11: </head>
+Explanation: Ends CSS.
+Line 12: <body>
+Explanation: Ends head.
+Line 13: <p class="highlight">Important message</p>
+Explanation: Starts body.
+Line 14: </body>
+Explanation: Applies the highlight class to this paragraph.
+Line 15: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+The paragraph appears as a highlighted box.
+
+================================================================================
+
+PROGRAM 4: ID Selector
+----------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#title {
+    color: purple;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 id="title">My Website</h1>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: #title {
+Explanation: Selects the element with id title.
+Line 6:     color: purple;
+Explanation: Starts the rule.
+Line 7:     text-align: center;
+Explanation: Makes the title purple.
+Line 8: }
+Explanation: Centers the title.
+Line 9: </style>
+Explanation: Ends the rule.
+Line 10: </head>
+Explanation: Ends CSS.
+Line 11: <body>
+Explanation: Ends head.
+Line 12: <h1 id="title">My Website</h1>
+Explanation: Starts body.
+Line 13: </body>
+Explanation: Gives the heading the id title.
+Line 14: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+The heading becomes purple and centered. An id normally identifies one unique element.
+
+================================================================================
+
+PROGRAM 5: Box Model
+--------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 3px solid black;
+    margin: 30px;
+    background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<div class="box">CSS Box</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .box {
+Explanation: Selects the box class.
+Line 6:     width: 200px;
+Explanation: Starts the rule.
+Line 7:     padding: 20px;
+Explanation: Sets the content width to 200 pixels.
+Line 8:     border: 3px solid black;
+Explanation: Adds 20 pixels of space inside the border.
+Line 9:     margin: 30px;
+Explanation: Adds a 3-pixel solid black border.
+Line 10:     background-color: lightblue;
+Explanation: Adds 30 pixels of outside space.
+Line 11: }
+Explanation: Sets a light blue background.
+Line 12: </style>
+Explanation: Ends the rule.
+Line 13: </head>
+Explanation: Ends CSS.
+Line 14: <body>
+Explanation: Ends head.
+Line 15: <div class="box">CSS Box</div>
+Explanation: Starts body.
+Line 16: </body>
+Explanation: Creates a div using the box class.
+Line 17: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+A light-blue box appears with padding, border, and outside margin.
+
+================================================================================
+
+PROGRAM 6: Rounded Button
+-------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+}
+.button:hover {
+    background-color: darkblue;
+}
+</style>
+</head>
+<body>
+<button class="button">Click Me</button>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .button {
+Explanation: Selects the button class.
+Line 6:     background-color: blue;
+Explanation: Starts the button rule.
+Line 7:     color: white;
+Explanation: Sets a blue background.
+Line 8:     padding: 12px 20px;
+Explanation: Sets white text.
+Line 9:     border: none;
+Explanation: Adds 12 pixels vertically and 20 horizontally inside the button.
+Line 10:     border-radius: 8px;
+Explanation: Removes the default border.
+Line 11: }
+Explanation: Rounds the button corners by 8 pixels.
+Line 12: .button:hover {
+Explanation: Ends the rule.
+Line 13:     background-color: darkblue;
+Explanation: Selects the button class only while the mouse is over it.
+Line 14: }
+Explanation: Starts the hover rule.
+Line 15: </style>
+Explanation: Changes the background to dark blue during hover.
+Line 16: </head>
+Explanation: Ends the hover rule.
+Line 17: <body>
+Explanation: Ends CSS.
+Line 18: <button class="button">Click Me</button>
+Explanation: Ends head.
+Line 19: </body>
+Explanation: Starts body.
+Line 20: </html>
+Explanation: Creates a button using the class.
+
+RESULT / WHAT TO OBSERVE:
+A rounded blue button changes to dark blue when the pointer moves over it.
+
+================================================================================
+
+PROGRAM 7: Flexbox Row
+----------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.box {
+    width: 80px;
+    padding: 20px;
+    background: lightblue;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .container {
+Explanation: Selects container.
+Line 6:     display: flex;
+Explanation: Starts the rule.
+Line 7:     justify-content: center;
+Explanation: Turns the container into a flex container.
+Line 8:     gap: 20px;
+Explanation: Centers its children along the main axis.
+Line 9: }
+Explanation: Adds 20 pixels between children.
+Line 10: .box {
+Explanation: Ends the rule.
+Line 11:     width: 80px;
+Explanation: Selects box.
+Line 12:     padding: 20px;
+Explanation: Starts box rule.
+Line 13:     background: lightblue;
+Explanation: Sets width to 80 pixels.
+Line 14:     text-align: center;
+Explanation: Adds 20 pixels of inside space.
+Line 15: }
+Explanation: Sets a light-blue background.
+Line 16: </style>
+Explanation: Centers text inside each box.
+Line 17: </head>
+Explanation: Ends rule.
+Line 18: <body>
+Explanation: Ends CSS.
+Line 19: <div class="container">
+Explanation: Ends head.
+Line 20:     <div class="box">1</div>
+Explanation: Starts body.
+Line 21:     <div class="box">2</div>
+Explanation: Starts the flex container.
+Line 22:     <div class="box">3</div>
+Explanation: Creates box 1.
+Line 23: </div>
+Explanation: Creates box 2.
+Line 24: </body>
+Explanation: Creates box 3.
+Line 25: </html>
+Explanation: Closes container.
+
+RESULT / WHAT TO OBSERVE:
+Three boxes appear in a centered row with equal gaps.
+
+================================================================================
+
+PROGRAM 8: Flexbox Column
+-------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+.item {
+    padding: 15px;
+    background: lightgreen;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="item">Home</div>
+    <div class="item">About</div>
+    <div class="item">Contact</div>
+</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .container {
+Explanation: Selects container.
+Line 6:     display: flex;
+Explanation: Starts rule.
+Line 7:     flex-direction: column;
+Explanation: Creates a flex container.
+Line 8:     gap: 10px;
+Explanation: Changes the main direction from row to column.
+Line 9:     width: 200px;
+Explanation: Adds 10 pixels between items.
+Line 10: }
+Explanation: Sets container width to 200 pixels.
+Line 11: .item {
+Explanation: Ends rule.
+Line 12:     padding: 15px;
+Explanation: Selects item.
+Line 13:     background: lightgreen;
+Explanation: Starts rule.
+Line 14: }
+Explanation: Adds 15 pixels of inside space.
+Line 15: </style>
+Explanation: Sets a light-green background.
+Line 16: </head>
+Explanation: Ends rule.
+Line 17: <body>
+Explanation: Ends CSS.
+Line 18: <div class="container">
+Explanation: Ends head.
+Line 19:     <div class="item">Home</div>
+Explanation: Starts body.
+Line 20:     <div class="item">About</div>
+Explanation: Starts container.
+Line 21:     <div class="item">Contact</div>
+Explanation: Creates Home item.
+Line 22: </div>
+Explanation: Creates About item.
+Line 23: </body>
+Explanation: Creates Contact item.
+Line 24: </html>
+Explanation: Closes container.
+
+RESULT / WHAT TO OBSERVE:
+The three items appear vertically like a simple menu.
+
+================================================================================
+
+PROGRAM 9: CSS Grid
+-------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.card {
+    padding: 20px;
+    background: lightblue;
+}
+</style>
+</head>
+<body>
+<div class="grid">
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .grid {
+Explanation: Selects grid.
+Line 6:     display: grid;
+Explanation: Starts the rule.
+Line 7:     grid-template-columns: repeat(3, 1fr);
+Explanation: Turns the element into a CSS grid.
+Line 8:     gap: 10px;
+Explanation: Creates three equal columns.
+Line 9: }
+Explanation: Adds 10 pixels between grid items.
+Line 10: .card {
+Explanation: Ends the rule.
+Line 11:     padding: 20px;
+Explanation: Selects card.
+Line 12:     background: lightblue;
+Explanation: Starts card rule.
+Line 13: }
+Explanation: Adds 20 pixels of inside space.
+Line 14: </style>
+Explanation: Sets a light-blue background.
+Line 15: </head>
+Explanation: Ends rule.
+Line 16: <body>
+Explanation: Ends CSS.
+Line 17: <div class="grid">
+Explanation: Ends head.
+Line 18:     <div class="card">1</div>
+Explanation: Starts body.
+Line 19:     <div class="card">2</div>
+Explanation: Starts grid container.
+Line 20:     <div class="card">3</div>
+Explanation: Creates card 1.
+Line 21:     <div class="card">4</div>
+Explanation: Creates card 2.
+Line 22: </div>
+Explanation: Creates card 3.
+Line 23: </body>
+Explanation: Creates card 4.
+Line 24: </html>
+Explanation: Closes grid.
+
+RESULT / WHAT TO OBSERVE:
+Four cards are arranged across three equal columns.
+
+================================================================================
+
+PROGRAM 10: Center a Box
+-----------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+    width: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: orange;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="box">Centered Box</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .box {
+Explanation: Selects the box class.
+Line 6:     width: 200px;
+Explanation: Starts the rule.
+Line 7:     margin: 50px auto;
+Explanation: Sets width to 200 pixels.
+Line 8:     padding: 20px;
+Explanation: Adds 50 pixels vertically and automatic left/right margins; auto centers the box horizontally.
+Line 9:     background: orange;
+Explanation: Adds 20 pixels inside the box.
+Line 10:     text-align: center;
+Explanation: Makes the background orange.
+Line 11: }
+Explanation: Centers text.
+Line 12: </style>
+Explanation: Ends rule.
+Line 13: </head>
+Explanation: Ends CSS.
+Line 14: <body>
+Explanation: Ends head.
+Line 15: <div class="box">Centered Box</div>
+Explanation: Starts body.
+Line 16: </body>
+Explanation: Creates the box.
+Line 17: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+The box is centered horizontally on the page.
+
+================================================================================
+
+PROGRAM 11: Border and Shadow
+----------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+}
+</style>
+</head>
+<body>
+<div class="card">Profile Card</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .card {
+Explanation: Selects card.
+Line 6:     width: 250px;
+Explanation: Starts rule.
+Line 7:     padding: 20px;
+Explanation: Sets card width.
+Line 8:     border: 1px solid gray;
+Explanation: Adds inside space.
+Line 9:     border-radius: 10px;
+Explanation: Adds a 1-pixel gray border.
+Line 10:     box-shadow: 0 4px 10px gray;
+Explanation: Rounds corners by 10 pixels.
+Line 11: }
+Explanation: Adds a shadow below the card.
+Line 12: </style>
+Explanation: Ends rule.
+Line 13: </head>
+Explanation: Ends CSS.
+Line 14: <body>
+Explanation: Ends head.
+Line 15: <div class="card">Profile Card</div>
+Explanation: Starts body.
+Line 16: </body>
+Explanation: Creates the card.
+Line 17: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+A card appears with a border, rounded corners, and shadow.
+
+================================================================================
+
+PROGRAM 12: Image Styling
+------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid blue;
+}
+</style>
+</head>
+<body>
+<img src="https://via.placeholder.com/150" alt="Profile">
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: img {
+Explanation: Selects all images.
+Line 6:     width: 150px;
+Explanation: Starts image rule.
+Line 7:     height: 150px;
+Explanation: Sets image width.
+Line 8:     border-radius: 50%;
+Explanation: Sets image height.
+Line 9:     border: 4px solid blue;
+Explanation: Makes the image circular.
+Line 10: }
+Explanation: Adds a 4-pixel blue border.
+Line 11: </style>
+Explanation: Ends rule.
+Line 12: </head>
+Explanation: Ends CSS.
+Line 13: <body>
+Explanation: Ends head.
+Line 14: <img src="https://via.placeholder.com/150" alt="Profile">
+Explanation: Starts body.
+Line 15: </body>
+Explanation: Displays the image and gives it an alternative description.
+Line 16: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+The image appears as a circle with a blue border.
+
+================================================================================
+
+PROGRAM 13: Responsive Design
+----------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: flex;
+    gap: 10px;
+}
+.box {
+    flex: 1;
+    padding: 30px;
+    background: lightblue;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box">One</div>
+    <div class="box">Two</div>
+    <div class="box">Three</div>
+</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .container {
+Explanation: Selects container.
+Line 6:     display: flex;
+Explanation: Starts rule.
+Line 7:     gap: 10px;
+Explanation: Creates a flex layout.
+Line 8: }
+Explanation: Adds a 10-pixel gap.
+Line 9: .box {
+Explanation: Ends rule.
+Line 10:     flex: 1;
+Explanation: Selects box.
+Line 11:     padding: 30px;
+Explanation: Starts rule.
+Line 12:     background: lightblue;
+Explanation: Allows each box to share available space.
+Line 13: }
+Explanation: Adds 30 pixels inside.
+Line 14: @media (max-width: 600px) {
+Explanation: Sets light-blue background.
+Line 15:     .container {
+Explanation: Ends rule.
+Line 16:         flex-direction: column;
+Explanation: Starts a media query for screens 600 pixels wide or smaller.
+Line 17:     }
+Explanation: Starts the container rule inside the media query.
+Line 18: }
+Explanation: Changes the layout direction to a column on small screens.
+Line 19: </style>
+Explanation: Ends the inner rule.
+Line 20: </head>
+Explanation: Ends the media query.
+Line 21: <body>
+Explanation: Ends CSS.
+Line 22: <div class="container">
+Explanation: Ends head.
+Line 23:     <div class="box">One</div>
+Explanation: Starts body.
+Line 24:     <div class="box">Two</div>
+Explanation: Starts container.
+Line 25:     <div class="box">Three</div>
+Explanation: Creates box One.
+Line 26: </div>
+Explanation: Creates box Two.
+Line 27: </body>
+Explanation: Creates box Three.
+Line 28: </html>
+Explanation: Closes container.
+
+RESULT / WHAT TO OBSERVE:
+On large screens the boxes are in a row; on small screens they stack vertically.
+
+================================================================================
+
+PROGRAM 14: Navigation Bar
+-------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav {
+    background: black;
+    padding: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav a:hover {
+    color: yellow;
+}
+</style>
+</head>
+<body>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: nav {
+Explanation: Selects nav.
+Line 6:     background: black;
+Explanation: Starts nav rule.
+Line 7:     padding: 15px;
+Explanation: Makes navigation background black.
+Line 8: }
+Explanation: Adds 15 pixels of inside space.
+Line 9: nav a {
+Explanation: Ends rule.
+Line 10:     color: white;
+Explanation: Selects links inside nav.
+Line 11:     text-decoration: none;
+Explanation: Starts link rule.
+Line 12:     margin-right: 20px;
+Explanation: Makes link text white.
+Line 13: }
+Explanation: Removes the underline.
+Line 14: nav a:hover {
+Explanation: Adds 20 pixels of right space.
+Line 15:     color: yellow;
+Explanation: Ends rule.
+Line 16: }
+Explanation: Selects nav links while hovered.
+Line 17: </style>
+Explanation: Starts hover rule.
+Line 18: </head>
+Explanation: Changes hovered link to yellow.
+Line 19: <body>
+Explanation: Ends rule.
+Line 20: <nav>
+Explanation: Ends CSS.
+Line 21:     <a href="#">Home</a>
+Explanation: Ends head.
+Line 22:     <a href="#">About</a>
+Explanation: Starts body.
+Line 23:     <a href="#">Contact</a>
+Explanation: Starts navigation.
+Line 24: </nav>
+Explanation: Creates Home link.
+Line 25: </body>
+Explanation: Creates About link.
+Line 26: </html>
+Explanation: Creates Contact link.
+
+RESULT / WHAT TO OBSERVE:
+A simple black navigation bar appears, and links turn yellow on hover.
+
+================================================================================
+
+PROGRAM 15: Form Styling
+-----------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+}
+</style>
+</head>
+<body>
+<input type="text" placeholder="Enter name">
+<button>Submit</button>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: input {
+Explanation: Selects all input elements.
+Line 6:     padding: 10px;
+Explanation: Starts input rule.
+Line 7:     border: 1px solid gray;
+Explanation: Adds 10 pixels inside the input.
+Line 8:     border-radius: 5px;
+Explanation: Adds a thin gray border.
+Line 9: }
+Explanation: Rounds input corners.
+Line 10: button {
+Explanation: Ends rule.
+Line 11:     padding: 10px 20px;
+Explanation: Selects all buttons.
+Line 12:     background: blue;
+Explanation: Starts button rule.
+Line 13:     color: white;
+Explanation: Adds vertical and horizontal padding.
+Line 14:     border: none;
+Explanation: Sets a blue background.
+Line 15: }
+Explanation: Sets white text.
+Line 16: </style>
+Explanation: Removes the default border.
+Line 17: </head>
+Explanation: Ends rule.
+Line 18: <body>
+Explanation: Ends CSS.
+Line 19: <input type="text" placeholder="Enter name">
+Explanation: Ends head.
+Line 20: <button>Submit</button>
+Explanation: Starts body.
+Line 21: </body>
+Explanation: Creates a text input with placeholder text.
+Line 22: </html>
+Explanation: Creates a Submit button.
+
+RESULT / WHAT TO OBSERVE:
+The input and button look cleaner and more like a form UI.
+
+================================================================================
+
+PROGRAM 16: Hover Card
+---------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+    width: 250px;
+    padding: 20px;
+    background: white;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+<div class="card">Move the mouse over me</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: .card {
+Explanation: Selects card.
+Line 6:     width: 250px;
+Explanation: Starts card rule.
+Line 7:     padding: 20px;
+Explanation: Sets card width.
+Line 8:     background: white;
+Explanation: Adds inside space.
+Line 9:     transition: 0.3s;
+Explanation: Sets a white background.
+Line 10: }
+Explanation: Makes changes animate over 0.3 seconds.
+Line 11: .card:hover {
+Explanation: Ends rule.
+Line 12:     transform: scale(1.05);
+Explanation: Selects the card while hovered.
+Line 13: }
+Explanation: Starts hover rule.
+Line 14: </style>
+Explanation: Makes the card 5 percent larger.
+Line 15: </head>
+Explanation: Ends hover rule.
+Line 16: <body>
+Explanation: Ends CSS.
+Line 17: <div class="card">Move the mouse over me</div>
+Explanation: Ends head.
+Line 18: </body>
+Explanation: Starts body.
+Line 19: </html>
+Explanation: Creates the card.
+
+RESULT / WHAT TO OBSERVE:
+The card smoothly grows slightly when the mouse moves over it.
+
+================================================================================
+
+PROGRAM 17: Complete Profile Card
+--------------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+}
+.card {
+    width: 280px;
+    margin: 50px auto;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px gray;
+}
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.card a {
+    display: inline-block;
+    padding: 10px 18px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+    <img src="https://via.placeholder.com/100" alt="Profile">
+    <h2>Ravi Kumar</h2>
+    <p>Frontend Student</p>
+    <a href="#">Contact</a>
+</div>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <head>
+Explanation: Starts head.
+Line 4: <style>
+Explanation: Starts CSS.
+Line 5: body {
+Explanation: Selects the whole page body.
+Line 6:     font-family: Arial, sans-serif;
+Explanation: Starts body rule.
+Line 7:     background: #eeeeee;
+Explanation: Uses Arial or a sans-serif fallback.
+Line 8: }
+Explanation: Sets a light gray page background.
+Line 9: .card {
+Explanation: Ends rule.
+Line 10:     width: 280px;
+Explanation: Selects card.
+Line 11:     margin: 50px auto;
+Explanation: Starts card rule.
+Line 12:     padding: 25px;
+Explanation: Sets card width.
+Line 13:     text-align: center;
+Explanation: Centers it with 50px top/bottom margin and auto side margins.
+Line 14:     background: white;
+Explanation: Adds inside space.
+Line 15:     border-radius: 12px;
+Explanation: Centers text.
+Line 16:     box-shadow: 0 4px 12px gray;
+Explanation: Sets white background.
+Line 17: }
+Explanation: Rounds corners.
+Line 18: .card img {
+Explanation: Adds a shadow.
+Line 19:     width: 100px;
+Explanation: Ends rule.
+Line 20:     height: 100px;
+Explanation: Selects images inside card.
+Line 21:     border-radius: 50%;
+Explanation: Starts image rule.
+Line 22: }
+Explanation: Sets image width.
+Line 23: .card a {
+Explanation: Sets image height.
+Line 24:     display: inline-block;
+Explanation: Makes image circular.
+Line 25:     padding: 10px 18px;
+Explanation: Ends rule.
+Line 26:     background: blue;
+Explanation: Selects links inside card.
+Line 27:     color: white;
+Explanation: Starts link rule.
+Line 28:     text-decoration: none;
+Explanation: Lets the link accept padding like a button.
+Line 29:     border-radius: 6px;
+Explanation: Adds inside space.
+Line 30: }
+Explanation: Sets blue background.
+Line 31: </style>
+Explanation: Sets white text.
+Line 32: </head>
+Explanation: Removes underline.
+Line 33: <body>
+Explanation: Rounds corners.
+Line 34: <div class="card">
+Explanation: Ends rule.
+Line 35:     <img src="https://via.placeholder.com/100" alt="Profile">
+Explanation: Ends CSS.
+Line 36:     <h2>Ravi Kumar</h2>
+Explanation: Ends head.
+Line 37:     <p>Frontend Student</p>
+Explanation: Starts body.
+Line 38:     <a href="#">Contact</a>
+Explanation: Starts the card.
+Line 39: </div>
+Explanation: Displays profile image.
+Line 40: </body>
+Explanation: Creates the name heading.
+Line 41: </html>
+Explanation: Creates the role paragraph.
+
+RESULT / WHAT TO OBSERVE:
+A complete profile card is displayed using several basic CSS concepts together.
+
+================================================================================

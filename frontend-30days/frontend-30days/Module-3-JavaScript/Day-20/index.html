@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application - Day 20 Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Todo App</h1>
+            <p class="subtitle">Stay organized and productive</p>
+        </header>
+
+        <main>
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="todo-input" 
+                        placeholder="Add a new task..."
+                        autocomplete="off"
+                    >
+                    <button id="add-btn" class="btn-primary">Add</button>
+                </div>
+            </section>
+
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+                <button id="clear-btn" class="btn-danger">Clear Completed</button>
+            </section>
+
+            <!-- Todo List -->
+            <section class="todo-section">
+                <ul id="todo-list" class="todo-list">
+                    <!-- Todo items will be added here dynamically -->
+                </ul>
+                <div id="empty-state" class="empty-state">
+                    <p>No todos yet. Add one to get started!</p>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stat">
+                    <span class="stat-label">Total:</span>
+                    <span id="total-count" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Active:</span>
+                    <span id="active-count" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Completed:</span>
+                    <span id="completed-count" class="stat-value">0</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Todo App. Built with HTML, CSS & JavaScript.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

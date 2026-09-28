@@ -1,0 +1,142 @@
+/* Day 11 - CSS Flexbox */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Basic Flex Container */
+.flex-container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+.flex-item {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* Flex Direction Rows */
+.flex-row {
+    flex-direction: row;
+}
+
+/* Flex Direction Column */
+.flex-column {
+    flex-direction: column;
+}
+
+/* Justify Content Properties */
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-around {
+    justify-content: space-around;
+}
+
+/* Align Items */
+.flex-align-center {
+    align-items: center;
+    min-height: 200px;
+}
+
+/* Flex Wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-item-large {
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 150px;
+    flex: 1;
+    min-height: 100px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #0066cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+}

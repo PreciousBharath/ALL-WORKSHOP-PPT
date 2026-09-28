@@ -1,0 +1,49 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="color.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO GUY</h1>
+    <h2> WELCOME TO FIRST WEBSITE</h2>
+    <h3> "LET'S BUILD A WEBSITE"</h3>
+    <button id="clickMe">CLICK ME</button>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
+
+---
+CSS
+
+<style>
+
+h1 {
+  color: green;
+}
+h2 {
+  color: blueviolet;
+}
+h3 {
+  color: blue;
+}
+
+</style>
+
+
+console.log("Hello, JavaScript!");
+alert("Welcome to JavaScript");
+
+const clickMeButton = document.querySelector("#clickMe");
+const headingTwo = document.querySelector("h2");
+
+clickMeButton.addEventListener("click", () => {
+	headingTwo.style.color = "red";
+});
+
+

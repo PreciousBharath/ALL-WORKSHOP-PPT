@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio - Day 13</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">John Doe</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm John Doe</h1>
+            <p>Full Stack Web Developer</p>
+            <p class="hero-subtitle">Creating beautiful and functional web experiences</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate web developer with 2+ years of experience in creating responsive and user-friendly websites.</p>
+                    <p>Specializing in HTML5, CSS3, JavaScript, and modern frameworks like React.</p>
+                    <p>I love solving complex problems and turning ideas into reality through code.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Todo App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Todo Application</h3>
+                        <p>A fully functional todo app with local storage support.</p>
+                        <p class="tech-stack">HTML, CSS, JavaScript</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Weather App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Real-time weather application with API integration.</p>
+                        <p class="tech-stack">React, API, CSS</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="E-commerce">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Store</h3>
+                        <p>Full-featured e-commerce platform with cart functionality.</p>
+                        <p class="tech-stack">React, Context API, CSS</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Blog">
+                    </div>
+                    <div class="project-info">
+                        <h3>Blog Platform</h3>
+                        <p>Dynamic blog with comments and user authentication.</p>
+                        <p class="tech-stack">React, Node.js, MongoDB</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Portfolio">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Site</h3>
+                        <p>Responsive portfolio website showcasing all projects.</p>
+                        <p class="tech-stack">HTML, CSS, JavaScript</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Social Media">
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Network</h3>
+                        <p>Social platform with real-time notifications.</p>
+                        <p class="tech-stack">React, Firebase, CSS</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="contact-intro">I'd love to hear from you. Let's work together!</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>john@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Location</h4>
+                    <p>New York, USA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

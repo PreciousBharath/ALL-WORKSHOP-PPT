@@ -1,0 +1,311 @@
+HTML BASICS - 10 PROGRAMS
+===========================
+
+PROGRAM 1: BASIC HTML PAGE
+--------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to HTML</h1>
+    <p>This is my first web page.</p>
+</body>
+</html>
+
+Explanation:
+- <!DOCTYPE html> tells the browser that this is an HTML5 document.
+- <html> is the main container of the page.
+- <head> contains information about the page.
+- <title> gives a title to the browser tab.
+- <body> contains the visible content.
+- <h1> creates a large heading.
+- <p> creates a paragraph.
+
+
+PROGRAM 2: HEADINGS AND PARAGRAPHS
+----------------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Headings</title>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <h2>Second Heading</h2>
+    <h3>Third Heading</h3>
+    <p>HTML is used to create the structure of web pages.</p>
+    <p>It uses tags to display different types of content.</p>
+</body>
+</html>
+
+Explanation:
+- HTML provides headings from <h1> to <h6>.
+- <h1> is the biggest and most important heading.
+- <h2> and <h3> are smaller headings.
+- <p> is used to write paragraphs.
+- Each paragraph is normally written inside a separate <p> tag.
+
+
+PROGRAM 3: TEXT FORMATTING
+--------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Formatting</title>
+</head>
+<body>
+    <h1>Text Formatting</h1>
+    <p><b>Bold Text</b></p>
+    <p><strong>Important Text</strong></p>
+    <p><i>Italic Text</i></p>
+    <p><u>Underlined Text</u></p>
+    <p><mark>Highlighted Text</mark></p>
+    <p>H<sub>2</sub>O</p>
+    <p>x<sup>2</sup></p>
+</body>
+</html>
+
+Explanation:
+- <b> makes text bold.
+- <strong> shows important text, usually in bold.
+- <i> makes text italic.
+- <u> underlines text.
+- <mark> highlights text.
+- <sub> creates subscript text.
+- <sup> creates superscript text.
+
+
+PROGRAM 4: ORDERED AND UNORDERED LISTS
+---------------------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lists</title>
+</head>
+<body>
+    <h1>My Subjects</h1>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Open the browser</li>
+        <li>Write the code</li>
+        <li>Run the program</li>
+    </ol>
+</body>
+</html>
+
+Explanation:
+- <ul> creates an unordered list with bullets.
+- <ol> creates an ordered list with numbers.
+- <li> represents one item in a list.
+- Lists are useful for showing subjects, steps, menus, and other items.
+
+
+PROGRAM 5: ADDING LINKS
+-----------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Useful Website</h1>
+    <p>Click the link below:</p>
+    <a href="https://www.google.com">Open Google</a>
+</body>
+</html>
+
+Explanation:
+- <a> is called the anchor tag.
+- It is used to create a link.
+- href contains the address of the page to open.
+- The text between <a> and </a> is shown as the clickable link.
+
+
+PROGRAM 6: ADDING AN IMAGE
+--------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image</title>
+</head>
+<body>
+    <h1>My Image</h1>
+    <img src="image.jpg" alt="Sample Image" width="300">
+</body>
+</html>
+
+Explanation:
+- <img> is used to display an image.
+- src tells the browser where the image is located.
+- alt provides alternative text if the image cannot be displayed.
+- width controls the image width.
+- Keep image.jpg in the same folder as the HTML file for this example.
+
+
+PROGRAM 7: HTML TABLE
+---------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Table</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>20</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>19</td>
+            <td>Information Technology</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+Explanation:
+- <table> creates a table.
+- <tr> creates a table row.
+- <th> creates a heading cell.
+- <td> creates a normal data cell.
+- border="1" adds a simple border to the table.
+
+
+PROGRAM 8: HTML FORM
+--------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" name="name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password">
+        <br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+
+Explanation:
+- <form> creates a form.
+- <label> gives a name to an input field.
+- type="text" creates a text box.
+- type="email" creates an email input.
+- type="password" hides the typed password.
+- type="submit" creates a submit button.
+- <br> moves the next content to a new line.
+
+
+PROGRAM 9: AUDIO AND VIDEO
+--------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio and Video</title>
+</head>
+<body>
+    <h1>Media Example</h1>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <h2>Video</h2>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</body>
+</html>
+
+Explanation:
+- <audio> is used to add sound to a web page.
+- <video> is used to add a video.
+- controls gives the user play, pause, and volume controls.
+- <source> specifies the media file.
+- Keep song.mp3 and video.mp4 in the same folder for this example.
+
+
+PROGRAM 10: SIMPLE PERSONAL PROFILE PAGE
+----------------------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+</head>
+<body>
+    <header>
+        <h1>My Personal Profile</h1>
+    </header>
+
+    <main>
+        <h2>About Me</h2>
+        <p>My name is Rahul. I am a student learning web development.</p>
+
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>Email: student@example.com</p>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 My Profile</p>
+    </footer>
+</body>
+</html>
+
+Explanation:
+- <header> contains the top section of a page.
+- <main> contains the main content.
+- <footer> contains the bottom section.
+- <ul> and <li> are used for the skills list.
+- This program combines many basic HTML tags into one simple web page.

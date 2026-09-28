@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - Day 9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Box Model</h1>
+    
+    <section>
+        <h2>Understanding the Box Model</h2>
+        <p>Every element in CSS has a box model consisting of:</p>
+        <ul>
+            <li><strong>Content</strong>: The actual content</li>
+            <li><strong>Padding</strong>: Space inside the border</li>
+            <li><strong>Border</strong>: The border around the box</li>
+            <li><strong>Margin</strong>: Space outside the border</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>1. Content (Width & Height)</h2>
+        <div class="box box-content">
+            This is content with fixed width and height
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Padding (Inside Space)</h2>
+        <div class="box box-padding">
+            Content with padding inside the box
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Border (Border)</h2>
+        <div class="box box-border">
+            Content with border around it
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Margin (Outside Space)</h2>
+        <div class="box box-margin">
+            Box with margin (space outside)
+        </div>
+        <div class="box box-margin">
+            Another box showing margin between elements
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Complete Box Model Example</h2>
+        <div class="box box-complete">
+            Complete box model with all properties
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Box-Sizing Property</h2>
+        <div class="box box-content-box">
+            content-box (default): Width = content only
+        </div>
+        <div class="box box-border-box">
+            border-box: Width = content + padding + border
+        </div>
+    </section>
+</body>
+</html>

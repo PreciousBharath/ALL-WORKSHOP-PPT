@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 - DOM & Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #0051a1;
+        }
+        input {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .event-log {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #0066cc;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        #list-items {
+            list-style-position: inside;
+        }
+        #list-items li {
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .delete-btn {
+            background-color: #d32f2f;
+            padding: 5px 10px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .delete-btn:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Day 17 - DOM Manipulation & Event Handling</h1>
+
+        <!-- DOM Selection Examples -->
+        <section>
+            <h2>1. DOM Selection</h2>
+            <p id="target-paragraph" class="highlight">This paragraph has id="target-paragraph"</p>
+            <div class="box">Box with class="box"</div>
+            <div class="box">Another box with class="box"</div>
+            <button onclick="selectDOMElements()">Try Selection Methods</button>
+        </section>
+
+        <!-- Element Modification -->
+        <section>
+            <h2>2. Modify Elements</h2>
+            <div id="modify-box">Original Content</div>
+            <button onclick="changeText()">Change Text</button>
+            <button onclick="changeHTML()">Change HTML</button>
+            <button onclick="toggleClass()">Toggle Class</button>
+            <button onclick="changeAttributes()">Change Attributes</button>
+        </section>
+
+        <!-- Creating Elements -->
+        <section>
+            <h2>3. Create Elements</h2>
+            <input type="text" id="item-input" placeholder="Enter item">
+            <button onclick="addItem()">Add Item</button>
+            <ul id="list-items"></ul>
+        </section>
+
+        <!-- Event Handling -->
+        <section>
+            <h2>4. Event Handling</h2>
+            <button id="click-btn">Click Me (onclick)</button>
+            <input type="text" id="input-field" placeholder="Type something...">
+            <input type="range" id="slider" min="0" max="100" value="50">
+            <p>Slider value: <span id="slider-value">50</span></p>
+            <div class="event-log">
+                <h4>Event Log:</h4>
+                <ul id="event-log"></ul>
+            </div>
+        </section>
+
+        <!-- Mouse Events -->
+        <section>
+            <h2>5. Mouse Events</h2>
+            <div id="mouse-box" style="width: 100%; height: 100px; background-color: #e3f2fd; border: 2px solid #0066cc; display: flex; align-items: center; justify-content: center; margin: 10px 0; cursor: pointer; border-radius: 4px;">
+                Mouse over me!
+            </div>
+        </section>
+
+        <!-- Event Delegation -->
+        <section>
+            <h2>6. Event Delegation</h2>
+            <div id="button-container">
+                <button class="color-btn" data-color="red">Red</button>
+                <button class="color-btn" data-color="green">Green</button>
+                <button class="color-btn" data-color="blue">Blue</button>
+            </div>
+            <div id="color-box" style="width: 100%; height: 100px; background-color: #e3f2fd; margin: 10px 0; border-radius: 4px;"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

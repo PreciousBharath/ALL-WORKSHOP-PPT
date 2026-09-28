@@ -1,0 +1,189 @@
+/* Day 8 - CSS Colors, Backgrounds, Fonts & Text Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0066cc;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Examples */
+.color-hex {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.color-rgb {
+    color: rgb(75, 192, 192);
+    font-weight: bold;
+}
+
+.color-rgba {
+    color: rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.color-named {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Background Examples */
+.bg-color {
+    background-color: #ffd700;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-image {
+    background-image: url('https://via.placeholder.com/400x100');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Font Examples */
+.font-serif {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.font-sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.font-monospace {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+.font-cursive {
+    font-family: cursive;
+    font-size: 18px;
+}
+
+/* Text Styling Examples */
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    color: #333;
+}
+
+.text-spacing {
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.line-height-large {
+    line-height: 2;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Text Alignment */
+.text-left {
+    text-align: left;
+    background-color: #e3f2fd;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.text-center {
+    text-align: center;
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.text-right {
+    text-align: right;
+    background-color: #fff3e0;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.text-justify {
+    text-align: justify;
+    background-color: #f3e5f5;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}

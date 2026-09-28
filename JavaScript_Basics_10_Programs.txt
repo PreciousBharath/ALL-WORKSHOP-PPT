@@ -1,0 +1,304 @@
+JAVASCRIPT BASICS - 10 PROGRAMS
+================================
+
+PROGRAM 1: PRINT A MESSAGE
+--------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Message</title>
+</head>
+<body>
+    <h1>JavaScript Example</h1>
+
+    <script>
+        console.log("Hello, JavaScript!");
+        alert("Welcome to JavaScript");
+    </script>
+</body>
+</html>
+
+Explanation:
+- <script> is used to write JavaScript in an HTML page.
+- console.log() prints a message in the browser console.
+- alert() displays a message box.
+- JavaScript can make a web page interactive.
+
+
+PROGRAM 2: VARIABLES
+--------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Variables</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <script>
+        let name = "Rahul";
+        let age = 20;
+
+        document.write("Name: " + name + "<br>");
+        document.write("Age: " + age);
+    </script>
+</body>
+</html>
+
+Explanation:
+- A variable stores a value.
+- let is used to create a variable whose value can change.
+- name stores text.
+- age stores a number.
+- document.write() writes content on the web page.
+- + is used to join text and variables.
+
+
+PROGRAM 3: ADD TWO NUMBERS
+--------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition</title>
+</head>
+<body>
+    <h1>Addition of Two Numbers</h1>
+
+    <script>
+        let a = 10;
+        let b = 20;
+        let sum = a + b;
+
+        document.write("First Number: " + a + "<br>");
+        document.write("Second Number: " + b + "<br>");
+        document.write("Sum: " + sum);
+    </script>
+</body>
+</html>
+
+Explanation:
+- a and b store two numbers.
+- + adds the two numbers.
+- The result is stored in sum.
+- The program displays all three values on the page.
+
+
+PROGRAM 4: IF-ELSE STATEMENT
+----------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>If Else</title>
+</head>
+<body>
+    <h1>Check Number</h1>
+
+    <script>
+        let number = 15;
+
+        if (number > 0) {
+            document.write("The number is positive.");
+        } else {
+            document.write("The number is zero or negative.");
+        }
+    </script>
+</body>
+</html>
+
+Explanation:
+- if checks whether a condition is true.
+- number > 0 checks if the number is greater than zero.
+- If the condition is true, the first message is displayed.
+- else runs when the condition is false.
+- if-else is used for decision making.
+
+
+PROGRAM 5: FOR LOOP
+-------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Loop</title>
+</head>
+<body>
+    <h1>Numbers from 1 to 10</h1>
+
+    <script>
+        for (let i = 1; i <= 10; i++) {
+            document.write(i + "<br>");
+        }
+    </script>
+</body>
+</html>
+
+Explanation:
+- A loop repeats a block of code.
+- for creates a loop.
+- i starts from 1.
+- The loop continues while i is less than or equal to 10.
+- i++ increases i by 1 after each repetition.
+
+
+PROGRAM 6: FUNCTION
+-------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function</title>
+</head>
+<body>
+    <h1>Function Example</h1>
+
+    <script>
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        let message = greet("Rahul");
+        document.write(message);
+    </script>
+</body>
+</html>
+
+Explanation:
+- A function is a reusable block of code.
+- greet is the function name.
+- name is a parameter.
+- return sends a value back from the function.
+- greet("Rahul") calls the function.
+- Functions help avoid writing the same code many times.
+
+
+PROGRAM 7: ARRAY
+----------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array</title>
+</head>
+<body>
+    <h1>Student Names</h1>
+
+    <script>
+        let students = ["Arun", "Priya", "Kiran", "Meena"];
+
+        for (let i = 0; i < students.length; i++) {
+            document.write(students[i] + "<br>");
+        }
+    </script>
+</body>
+</html>
+
+Explanation:
+- An array stores multiple values in one variable.
+- students contains four names.
+- Array positions start from index 0.
+- length gives the number of items.
+- students[i] gets one item from the array.
+- The loop prints every name.
+
+
+PROGRAM 8: BUTTON CLICK EVENT
+-----------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Event</title>
+</head>
+<body>
+    <h1>Button Example</h1>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <script>
+        function showMessage() {
+            alert("Button was clicked!");
+        }
+    </script>
+</body>
+</html>
+
+Explanation:
+- The button has an onclick event.
+- onclick runs code when the button is clicked.
+- showMessage() calls the function.
+- The function displays an alert message.
+- Events allow JavaScript to respond to user actions.
+
+
+PROGRAM 9: CHANGE HTML CONTENT
+------------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Content</title>
+</head>
+<body>
+    <h1 id="heading">Original Heading</h1>
+    <button onclick="changeText()">Change Heading</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("heading").innerHTML =
+                "Heading Changed!";
+        }
+    </script>
+</body>
+</html>
+
+Explanation:
+- id gives a unique name to an HTML element.
+- getElementById() finds an element using its id.
+- innerHTML changes the content inside the element.
+- When the button is clicked, the heading changes.
+- This is a simple example of changing a web page using JavaScript.
+
+
+PROGRAM 10: SIMPLE CALCULATOR
+-----------------------------
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <button onclick="addNumbers()">Add</button>
+
+    <p id="result">Result will appear here.</p>
+
+    <script>
+        function addNumbers() {
+            let number1 = Number(document.getElementById("num1").value);
+            let number2 = Number(document.getElementById("num2").value);
+
+            let result = number1 + number2;
+
+            document.getElementById("result").innerHTML =
+                "Result: " + result;
+        }
+    </script>
+</body>
+</html>
+
+Explanation:
+- Two input boxes take numbers from the user.
+- value gets the value entered in an input.
+- Number() converts the input text into a number.
+- The + operator adds the two numbers.
+- getElementById() finds the result paragraph.
+- innerHTML displays the answer on the page.
+- This program combines HTML, JavaScript variables, functions, events, and basic DOM manipulation.

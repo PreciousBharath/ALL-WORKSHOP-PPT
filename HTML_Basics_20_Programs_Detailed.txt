@@ -1,0 +1,772 @@
+HTML BASICS - 20 PROGRAMS WITH LINE-BY-LINE EXPLANATIONS
+========================================================
+
+FORMAT USED FOR EVERY PROGRAM
+1. Complete program
+2. Line-by-line explanation in very simple English
+3. Short result/what to observe
+
+PROGRAM 1: Basic HTML Page
+--------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Hello HTML</h1>
+    <p>This is my first web page.</p>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares that this document uses HTML5.
+Line 2: <html>
+Explanation: Starts the main HTML document.
+Line 3: <head>
+Explanation: Starts the section that stores page information.
+Line 4:     <title>My First Page</title>
+Explanation: Sets the text shown on the browser tab.
+Line 5: </head>
+Explanation: Closes the head section.
+Line 6: <body>
+Explanation: Starts the visible part of the page.
+Line 7:     <h1>Hello HTML</h1>
+Explanation: Creates a large main heading.
+Line 8:     <p>This is my first web page.</p>
+Explanation: Creates a paragraph of normal text.
+Line 9: </body>
+Explanation: Closes the body section.
+Line 10: </html>
+Explanation: Closes the HTML document.
+
+RESULT / WHAT TO OBSERVE:
+The browser shows a heading and a paragraph.
+
+================================================================================
+
+PROGRAM 2: Headings and Paragraphs
+----------------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <h3>Small Heading</h3>
+    <p>HTML organizes information using headings and paragraphs.</p>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the HTML document.
+Line 3: <body>
+Explanation: Starts the visible page body.
+Line 4:     <h1>Main Heading</h1>
+Explanation: Creates the biggest heading.
+Line 5:     <h2>Sub Heading</h2>
+Explanation: Creates a smaller second-level heading.
+Line 6:     <h3>Small Heading</h3>
+Explanation: Creates a third-level heading.
+Line 7:     <p>HTML organizes information using headings and paragraphs.</p>
+Explanation: Creates a normal paragraph.
+Line 8: </body>
+Explanation: Closes the body.
+Line 9: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+You will see three heading sizes and one paragraph.
+
+================================================================================
+
+PROGRAM 3: Text Formatting
+--------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <p><strong>Important</strong> text</p>
+    <p><em>Emphasized</em> text</p>
+    <p><mark>Highlighted</mark> text</p>
+    <p>H<sub>2</sub>O</p>
+    <p>10<sup>2</sup></p>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <p><strong>Important</strong> text</p>
+Explanation: Creates a paragraph; strong marks Important as important text, then normal text follows.
+Line 5:     <p><em>Emphasized</em> text</p>
+Explanation: Creates a paragraph; em gives emphasized meaning to the word.
+Line 6:     <p><mark>Highlighted</mark> text</p>
+Explanation: Creates a paragraph; mark highlights the word.
+Line 7:     <p>H<sub>2</sub>O</p>
+Explanation: Creates a paragraph; sub places the number 2 below the normal text.
+Line 8:     <p>10<sup>2</sup></p>
+Explanation: Creates a paragraph; sup places 2 above the normal text.
+Line 9: </body>
+Explanation: Closes the body.
+Line 10: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+The words and numbers appear with different text formatting.
+
+================================================================================
+
+PROGRAM 4: Line Break and Horizontal Line
+-----------------------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>My Information</h1>
+    <p>Name: Ravi<br>Age: 20<br>City: Chennai</p>
+    <hr>
+    <p>Thank you for visiting.</p>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>My Information</h1>
+Explanation: Creates a heading.
+Line 5:     <p>Name: Ravi<br>Age: 20<br>City: Chennai</p>
+Explanation: Creates a paragraph; br moves the next text to a new line after each item.
+Line 6:     <hr>
+Explanation: Creates a horizontal line across the page.
+Line 7:     <p>Thank you for visiting.</p>
+Explanation: Creates another paragraph.
+Line 8: </body>
+Explanation: Closes the body.
+Line 9: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+The name, age, and city appear on separate lines, followed by a horizontal line.
+
+================================================================================
+
+PROGRAM 5: Hyperlinks
+---------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Useful Links</h1>
+    <a href="https://www.google.com">Open Google</a>
+    <br>
+    <a href="https://www.wikipedia.org" target="_blank">Open Wikipedia</a>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts the visible body.
+Line 4:     <h1>Useful Links</h1>
+Explanation: Creates a heading.
+Line 5:     <a href="https://www.google.com">Open Google</a>
+Explanation: Creates a link; href gives its destination and the visible text says Open Google.
+Line 6:     <br>
+Explanation: Moves the next content to a new line.
+Line 7:     <a href="https://www.wikipedia.org" target="_blank">Open Wikipedia</a>
+Explanation: Creates another link; target _blank asks the browser to open it in a new tab.
+Line 8: </body>
+Explanation: Closes the body.
+Line 9: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+Two clickable links are displayed.
+
+================================================================================
+
+PROGRAM 6: Image
+----------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>My Image</h1>
+    <img src="https://via.placeholder.com/200" alt="Sample image" width="200">
+    <p>This is an image.</p>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>My Image</h1>
+Explanation: Creates a heading.
+Line 5:     <img src="https://via.placeholder.com/200" alt="Sample image" width="200">
+Explanation: Displays an image; src gives the image address, alt describes it, and width sets its displayed width.
+Line 6:     <p>This is an image.</p>
+Explanation: Creates a paragraph below the image.
+Line 7: </body>
+Explanation: Closes the body.
+Line 8: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+A 200-pixel-wide placeholder image appears.
+
+================================================================================
+
+PROGRAM 7: Unordered List
+-------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>My Skills</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>My Skills</h1>
+Explanation: Creates a heading.
+Line 5:     <ul>
+Explanation: Starts an unordered, bulleted list.
+Line 6:         <li>HTML</li>
+Explanation: Creates the first list item.
+Line 7:         <li>CSS</li>
+Explanation: Creates the second list item.
+Line 8:         <li>JavaScript</li>
+Explanation: Creates the third list item.
+Line 9:     </ul>
+Explanation: Closes the list.
+Line 10: </body>
+Explanation: Closes the body.
+Line 11: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+Three skills appear as bullet points.
+
+================================================================================
+
+PROGRAM 8: Ordered List
+-----------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Learning Steps</h1>
+    <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+    </ol>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>Learning Steps</h1>
+Explanation: Creates a heading.
+Line 5:     <ol>
+Explanation: Starts a numbered list.
+Line 6:         <li>Learn HTML</li>
+Explanation: Creates step number one.
+Line 7:         <li>Learn CSS</li>
+Explanation: Creates step number two.
+Line 8:         <li>Learn JavaScript</li>
+Explanation: Creates step number three.
+Line 9:     </ol>
+Explanation: Closes the numbered list.
+Line 10: </body>
+Explanation: Closes the body.
+Line 11: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+The three steps appear with numbers 1, 2, and 3.
+
+================================================================================
+
+PROGRAM 9: Simple Table
+-----------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Student Marks</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Mark</th>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>85</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>Student Marks</h1>
+Explanation: Creates a heading.
+Line 5:     <table border="1">
+Explanation: Starts a table and uses a simple border so the cells are visible.
+Line 6:         <tr>
+Explanation: Starts the first table row.
+Line 7:             <th>Name</th>
+Explanation: Creates a heading cell named Name.
+Line 8:             <th>Mark</th>
+Explanation: Creates a heading cell named Mark.
+Line 9:         </tr>
+Explanation: Closes the first row.
+Line 10:         <tr>
+Explanation: Starts the second row.
+Line 11:             <td>Ravi</td>
+Explanation: Creates a normal cell containing Ravi.
+Line 12:             <td>85</td>
+Explanation: Creates a normal cell containing 85.
+Line 13:         </tr>
+Explanation: Closes the second row.
+Line 14:     </table>
+Explanation: Closes the table.
+Line 15: </body>
+Explanation: Closes the body.
+Line 16: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+A small table with Name and Mark columns appears.
+
+================================================================================
+
+PROGRAM 10: Basic Form
+---------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Registration</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>Registration</h1>
+Explanation: Creates a form title.
+Line 5:     <form>
+Explanation: Starts the form container.
+Line 6:         <label for="name">Name:</label>
+Explanation: Creates a label connected to the name input.
+Line 7:         <input type="text" id="name">
+Explanation: Creates a text input and gives it the id name.
+Line 8:         <br>
+Explanation: Moves the next content to a new line.
+Line 9:         <label for="email">Email:</label>
+Explanation: Creates an email label connected to the email input.
+Line 10:         <input type="email" id="email">
+Explanation: Creates an email input so the browser can recognize an email address.
+Line 11:         <br>
+Explanation: Moves the button to a new line.
+Line 12:         <button type="submit">Register</button>
+Explanation: Creates a submit button named Register.
+Line 13:     </form>
+Explanation: Closes the form.
+Line 14: </body>
+Explanation: Closes the body.
+Line 15: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+The page shows name and email boxes with a Register button.
+
+================================================================================
+
+PROGRAM 11: Radio Buttons
+------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Choose Gender</h1>
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>Choose Gender</h1>
+Explanation: Creates the heading.
+Line 5:     <label><input type="radio" name="gender" value="male"> Male</label>
+Explanation: Creates a label containing a radio button; the same name lets the browser treat the options as one group.
+Line 6:     <label><input type="radio" name="gender" value="female"> Female</label>
+Explanation: Creates the second radio option in the same group.
+Line 7: </body>
+Explanation: Closes the body.
+Line 8: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+Two radio options appear, and normally only one can be selected because they share the same name.
+
+================================================================================
+
+PROGRAM 12: Checkboxes
+---------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Select Skills</h1>
+    <label><input type="checkbox" name="skill" value="html"> HTML</label>
+    <label><input type="checkbox" name="skill" value="css"> CSS</label>
+    <label><input type="checkbox" name="skill" value="js"> JavaScript</label>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>Select Skills</h1>
+Explanation: Creates the heading.
+Line 5:     <label><input type="checkbox" name="skill" value="html"> HTML</label>
+Explanation: Creates a checkbox for HTML.
+Line 6:     <label><input type="checkbox" name="skill" value="css"> CSS</label>
+Explanation: Creates a checkbox for CSS.
+Line 7:     <label><input type="checkbox" name="skill" value="js"> JavaScript</label>
+Explanation: Creates a checkbox for JavaScript.
+Line 8: </body>
+Explanation: Closes the body.
+Line 9: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+The user can select any number of the three skills.
+
+================================================================================
+
+PROGRAM 13: Dropdown Menu
+------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Select a Course</h1>
+    <select id="course">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>Select a Course</h1>
+Explanation: Creates the heading.
+Line 5:     <select id="course">
+Explanation: Starts a dropdown list and gives it the id course.
+Line 6:         <option>HTML</option>
+Explanation: Creates the first option.
+Line 7:         <option>CSS</option>
+Explanation: Creates the second option.
+Line 8:         <option>JavaScript</option>
+Explanation: Creates the third option.
+Line 9:     </select>
+Explanation: Closes the dropdown.
+Line 10: </body>
+Explanation: Closes the body.
+Line 11: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+A dropdown lets the user choose one course.
+
+================================================================================
+
+PROGRAM 14: Semantic Page Layout
+-------------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <header><h1>My Website</h1></header>
+    <nav><a href="#">Home</a> | <a href="#">About</a></nav>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>I am learning web development.</p>
+        </section>
+    </main>
+    <footer><p>Copyright 2026</p></footer>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <header><h1>My Website</h1></header>
+Explanation: Creates a header area containing the website heading.
+Line 5:     <nav><a href="#">Home</a> | <a href="#">About</a></nav>
+Explanation: Creates navigation with two links; # is a placeholder destination.
+Line 6:     <main>
+Explanation: Starts the main content area.
+Line 7:         <section>
+Explanation: Starts a section for related content.
+Line 8:             <h2>About Me</h2>
+Explanation: Creates the section heading.
+Line 9:             <p>I am learning web development.</p>
+Explanation: Creates a paragraph inside the section.
+Line 10:         </section>
+Explanation: Closes the section.
+Line 11:     </main>
+Explanation: Closes the main area.
+Line 12:     <footer><p>Copyright 2026</p></footer>
+Explanation: Creates a footer with copyright text.
+Line 13: </body>
+Explanation: Closes the body.
+Line 14: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+The page is divided into header, navigation, main content, section, and footer.
+
+================================================================================
+
+PROGRAM 15: Audio
+----------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Audio Example</h1>
+    <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>Audio Example</h1>
+Explanation: Creates a heading.
+Line 5:     <audio controls>
+Explanation: Starts an audio player; controls tells the browser to show play controls.
+Line 6:         <source src="music.mp3" type="audio/mpeg">
+Explanation: Provides an MP3 audio file and its MIME type.
+Line 7:         Your browser does not support audio.
+Explanation: Shows fallback text if audio is not supported.
+Line 8:     </audio>
+Explanation: Closes the audio element.
+Line 9: </body>
+Explanation: Closes the body.
+Line 10: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+If music.mp3 exists in the same folder, an audio player appears.
+
+================================================================================
+
+PROGRAM 16: Video
+----------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Video Example</h1>
+    <video width="320" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>Video Example</h1>
+Explanation: Creates a heading.
+Line 5:     <video width="320" controls>
+Explanation: Starts a video player, sets its width, and shows controls.
+Line 6:         <source src="video.mp4" type="video/mp4">
+Explanation: Provides an MP4 video file and its type.
+Line 7:         Your browser does not support video.
+Explanation: Shows fallback text if video is unsupported.
+Line 8:     </video>
+Explanation: Closes the video element.
+Line 9: </body>
+Explanation: Closes the body.
+Line 10: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+If video.mp4 exists in the same folder, a video player appears.
+
+================================================================================
+
+PROGRAM 17: Personal Profile Project
+-----------------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+</head>
+<body>
+    <header><h1>Ravi Kumar</h1></header>
+    <main>
+        <p>I am learning frontend development.</p>
+        <h2>My Skills</h2>
+        <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <h2>Contact</h2>
+        <a href="mailto:ravi@example.com">Email Me</a>
+    </main>
+    <footer><p>My First HTML Project</p></footer>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <head>
+Explanation: Starts the head section.
+Line 4:     <title>My Profile</title>
+Explanation: Sets the browser-tab title.
+Line 5: </head>
+Explanation: Closes the head.
+Line 6: <body>
+Explanation: Starts visible content.
+Line 7:     <header><h1>Ravi Kumar</h1></header>
+Explanation: Creates a header containing the person's name.
+Line 8:     <main>
+Explanation: Starts the main content.
+Line 9:         <p>I am learning frontend development.</p>
+Explanation: Creates a short introduction paragraph.
+Line 10:         <h2>My Skills</h2>
+Explanation: Creates a Skills heading.
+Line 11:         <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+Explanation: Creates a list with three skills.
+Line 12:         <h2>Contact</h2>
+Explanation: Creates a Contact heading.
+Line 13:         <a href="mailto:ravi@example.com">Email Me</a>
+Explanation: Creates an email link using the mailto scheme.
+Line 14:     </main>
+Explanation: Closes main.
+Line 15:     <footer><p>My First HTML Project</p></footer>
+Explanation: Creates a footer.
+Line 16: </body>
+Explanation: Closes the body.
+Line 17: </html>
+Explanation: Closes the document.
+
+RESULT / WHAT TO OBSERVE:
+This combines headings, paragraphs, lists, links, and semantic layout into a small profile page.
+
+================================================================================

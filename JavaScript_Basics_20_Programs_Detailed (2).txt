@@ -1,0 +1,1003 @@
+JAVASCRIPT BASICS - 20 PROGRAMS WITH LINE-BY-LINE EXPLANATIONS
+==============================================================
+
+FORMAT USED FOR EVERY PROGRAM
+1. Complete program
+2. Line-by-line explanation in very simple English
+3. Short result/what to observe
+
+PROGRAM 1: Hello JavaScript
+---------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Basics</h1>
+    <script>
+        console.log("Hello, JavaScript!");
+        alert("Welcome to JavaScript");
+    </script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts the document.
+Line 3: <body>
+Explanation: Starts visible content.
+Line 4:     <h1>JavaScript Basics</h1>
+Explanation: Creates a heading.
+Line 5:     <script>
+Explanation: Starts JavaScript code.
+Line 6:         console.log("Hello, JavaScript!");
+Explanation: Prints Hello, JavaScript! in the browser console.
+Line 7:         alert("Welcome to JavaScript");
+Explanation: Shows a popup message.
+Line 8:     </script>
+Explanation: Ends JavaScript.
+Line 9: </body>
+Explanation: Ends body.
+Line 10: </html>
+Explanation: Ends document.
+
+RESULT / WHAT TO OBSERVE:
+You see a heading and a popup. The console also shows the console message.
+
+================================================================================
+
+PROGRAM 2: Variables
+--------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        let name = "Ravi";
+        let age = 20;
+        const country = "India";
+        console.log(name);
+        console.log(age);
+        console.log(country);
+    </script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4:     <script>
+Explanation: Starts JavaScript.
+Line 5:         let name = "Ravi";
+Explanation: Creates a variable named name and stores the text Ravi.
+Line 6:         let age = 20;
+Explanation: Creates a variable named age and stores the number 20.
+Line 7:         const country = "India";
+Explanation: Creates a constant named country and stores India.
+Line 8:         console.log(name);
+Explanation: Prints name.
+Line 9:         console.log(age);
+Explanation: Prints age.
+Line 10:         console.log(country);
+Explanation: Prints country.
+Line 11:     </script>
+Explanation: Ends JavaScript.
+Line 12: </body>
+Explanation: Ends body.
+Line 13: </html>
+Explanation: Ends document.
+
+RESULT / WHAT TO OBSERVE:
+The three stored values appear in the browser console.
+
+================================================================================
+
+PROGRAM 3: Add Two Numbers
+--------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let a = 10;
+let b = 20;
+let sum = a + b;
+console.log("Sum =", sum);
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let a = 10;
+Explanation: Stores 10 in variable a.
+Line 6: let b = 20;
+Explanation: Stores 20 in variable b.
+Line 7: let sum = a + b;
+Explanation: Adds a and b and stores the result in sum.
+Line 8: console.log("Sum =", sum);
+Explanation: Prints the result with the label Sum.
+Line 9: </script>
+Explanation: Ends JavaScript.
+Line 10: </body>
+Explanation: Ends body.
+Line 11: </html>
+Explanation: Ends document.
+
+RESULT / WHAT TO OBSERVE:
+The console shows Sum = 30.
+
+================================================================================
+
+PROGRAM 4: Even or Odd
+----------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let number = 7;
+if (number % 2 === 0) {
+    console.log("Even");
+} else {
+    console.log("Odd");
+}
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let number = 7;
+Explanation: Stores 7 in number.
+Line 6: if (number % 2 === 0) {
+Explanation: Checks whether the remainder after dividing by 2 is exactly 0.
+Line 7:     console.log("Even");
+Explanation: Starts the true block.
+Line 8: } else {
+Explanation: Prints Even if the condition is true.
+Line 9:     console.log("Odd");
+Explanation: Closes the true block.
+Line 10: }
+Explanation: Starts the false block.
+Line 11: </script>
+Explanation: Prints Odd if the condition is false.
+Line 12: </body>
+Explanation: Closes the false block.
+Line 13: </html>
+Explanation: Ends JavaScript.
+
+RESULT / WHAT TO OBSERVE:
+Because 7 is not divisible by 2, the console shows Odd.
+
+================================================================================
+
+PROGRAM 5: Positive, Negative, or Zero
+--------------------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let number = -5;
+if (number > 0) {
+    console.log("Positive");
+} else if (number < 0) {
+    console.log("Negative");
+} else {
+    console.log("Zero");
+}
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let number = -5;
+Explanation: Stores -5 in number.
+Line 6: if (number > 0) {
+Explanation: Checks whether number is greater than zero.
+Line 7:     console.log("Positive");
+Explanation: Starts the positive block.
+Line 8: } else if (number < 0) {
+Explanation: Prints Positive if true.
+Line 9:     console.log("Negative");
+Explanation: Closes that block.
+Line 10: } else {
+Explanation: Checks another condition when the first condition was false.
+Line 11:     console.log("Zero");
+Explanation: Starts the negative block.
+Line 12: }
+Explanation: Prints Negative if true.
+Line 13: </script>
+Explanation: Closes that block.
+Line 14: </body>
+Explanation: Starts the final else block.
+Line 15: </html>
+Explanation: Prints Zero if both earlier conditions were false.
+
+RESULT / WHAT TO OBSERVE:
+The console shows Negative.
+
+================================================================================
+
+PROGRAM 6: For Loop
+-------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: for (let i = 1; i <= 5; i++) {
+Explanation: Starts a loop; i begins at 1, continues while i is at most 5, and increases by 1 after each round.
+Line 6:     console.log(i);
+Explanation: Starts the loop body.
+Line 7: }
+Explanation: Prints the current value of i.
+Line 8: </script>
+Explanation: Closes the loop body.
+Line 9: </body>
+Explanation: Ends JavaScript.
+Line 10: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+The console prints 1, 2, 3, 4, and 5.
+
+================================================================================
+
+PROGRAM 7: While Loop
+---------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let count = 1;
+while (count <= 5) {
+    console.log(count);
+    count++;
+}
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let count = 1;
+Explanation: Creates count and starts it at 1.
+Line 6: while (count <= 5) {
+Explanation: Repeats the block while count is 5 or less.
+Line 7:     console.log(count);
+Explanation: Starts the loop body.
+Line 8:     count++;
+Explanation: Prints the current count.
+Line 9: }
+Explanation: Increases count by 1 so the loop can eventually stop.
+Line 10: </script>
+Explanation: Closes the loop.
+Line 11: </body>
+Explanation: Ends JavaScript.
+Line 12: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+The console prints numbers 1 through 5.
+
+================================================================================
+
+PROGRAM 8: Function
+-------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function greet(name) {
+    return "Hello " + name;
+}
+let message = greet("Ravi");
+console.log(message);
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: function greet(name) {
+Explanation: Defines a function named greet and gives it a parameter called name.
+Line 6:     return "Hello " + name;
+Explanation: Starts the function body.
+Line 7: }
+Explanation: Returns Hello plus the supplied name.
+Line 8: let message = greet("Ravi");
+Explanation: Ends the function.
+Line 9: console.log(message);
+Explanation: Calls greet with Ravi and stores the returned text in message.
+Line 10: </script>
+Explanation: Prints message.
+Line 11: </body>
+Explanation: Ends JavaScript.
+Line 12: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+The console shows Hello Ravi.
+
+================================================================================
+
+PROGRAM 9: Array
+----------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let skills = ["HTML", "CSS", "JavaScript"];
+console.log(skills[0]);
+console.log(skills.length);
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let skills = ["HTML", "CSS", "JavaScript"];
+Explanation: Creates an array containing three skills.
+Line 6: console.log(skills[0]);
+Explanation: Prints the first item; array indexing starts at 0.
+Line 7: console.log(skills.length);
+Explanation: Prints the number of items using length.
+Line 8: </script>
+Explanation: Ends JavaScript.
+Line 9: </body>
+Explanation: Ends body.
+Line 10: </html>
+Explanation: Ends document.
+
+RESULT / WHAT TO OBSERVE:
+The console shows HTML and then 3.
+
+================================================================================
+
+PROGRAM 10: Add Item to Array
+----------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let fruits = ["Apple", "Banana"];
+fruits.push("Mango");
+console.log(fruits);
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let fruits = ["Apple", "Banana"];
+Explanation: Creates an array with Apple and Banana.
+Line 6: fruits.push("Mango");
+Explanation: Adds Mango to the end of the array using push.
+Line 7: console.log(fruits);
+Explanation: Prints the complete array.
+Line 8: </script>
+Explanation: Ends JavaScript.
+Line 9: </body>
+Explanation: Ends body.
+Line 10: </html>
+Explanation: Ends document.
+
+RESULT / WHAT TO OBSERVE:
+The console shows Apple, Banana, and Mango.
+
+================================================================================
+
+PROGRAM 11: Object
+-----------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let student = {
+    name: "Ravi",
+    age: 20,
+    course: "HTML"
+};
+console.log(student.name);
+console.log(student.age);
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let student = {
+Explanation: Creates an object named student.
+Line 6:     name: "Ravi",
+Explanation: Starts the object's properties.
+Line 7:     age: 20,
+Explanation: Stores Ravi in the name property.
+Line 8:     course: "HTML"
+Explanation: Stores 20 in the age property.
+Line 9: };
+Explanation: Stores HTML in the course property.
+Line 10: console.log(student.name);
+Explanation: Closes the object.
+Line 11: console.log(student.age);
+Explanation: Prints the student's name property.
+Line 12: </script>
+Explanation: Prints the student's age property.
+Line 13: </body>
+Explanation: Ends JavaScript.
+Line 14: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+The console shows Ravi and 20.
+
+================================================================================
+
+PROGRAM 12: String Methods
+-------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let text = "hello world";
+console.log(text.toUpperCase());
+console.log(text.length);
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let text = "hello world";
+Explanation: Stores hello world in text.
+Line 6: console.log(text.toUpperCase());
+Explanation: Converts the text to uppercase and prints it.
+Line 7: console.log(text.length);
+Explanation: Prints the number of characters in the text.
+Line 8: </script>
+Explanation: Ends JavaScript.
+Line 9: </body>
+Explanation: Ends body.
+Line 10: </html>
+Explanation: Ends document.
+
+RESULT / WHAT TO OBSERVE:
+The console shows HELLO WORLD and the character count.
+
+================================================================================
+
+PROGRAM 13: User Input with Prompt
+---------------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let name = prompt("Enter your name:");
+alert("Hello " + name);
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <script>
+Explanation: Starts JavaScript.
+Line 5: let name = prompt("Enter your name:");
+Explanation: Shows a prompt and stores the user's typed answer in name.
+Line 6: alert("Hello " + name);
+Explanation: Shows an alert that joins Hello with the entered name.
+Line 7: </script>
+Explanation: Ends JavaScript.
+Line 8: </body>
+Explanation: Ends body.
+Line 9: </html>
+Explanation: Ends document.
+
+RESULT / WHAT TO OBSERVE:
+A prompt asks for a name, then an alert greets the user.
+
+================================================================================
+
+PROGRAM 14: DOM Text Change
+--------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="title">Old Text</h1>
+<script>
+const title = document.getElementById("title");
+title.textContent = "New Text";
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <h1 id="title">Old Text</h1>
+Explanation: Creates a heading with id title and text Old Text.
+Line 5: <script>
+Explanation: Starts JavaScript.
+Line 6: const title = document.getElementById("title");
+Explanation: Finds the HTML element whose id is title and stores it in title.
+Line 7: title.textContent = "New Text";
+Explanation: Changes that element's visible text to New Text.
+Line 8: </script>
+Explanation: Ends JavaScript.
+Line 9: </body>
+Explanation: Ends body.
+Line 10: </html>
+Explanation: Ends document.
+
+RESULT / WHAT TO OBSERVE:
+The heading changes from Old Text to New Text.
+
+================================================================================
+
+PROGRAM 15: Button Click Event
+-----------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<button id="btn">Click Me</button>
+<p id="message"></p>
+<script>
+const button = document.getElementById("btn");
+const message = document.getElementById("message");
+button.addEventListener("click", function() {
+    message.textContent = "Button was clicked!";
+});
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <button id="btn">Click Me</button>
+Explanation: Creates a button with id btn.
+Line 5: <p id="message"></p>
+Explanation: Creates an empty paragraph with id message.
+Line 6: <script>
+Explanation: Starts JavaScript.
+Line 7: const button = document.getElementById("btn");
+Explanation: Finds the button element.
+Line 8: const message = document.getElementById("message");
+Explanation: Finds the message paragraph.
+Line 9: button.addEventListener("click", function() {
+Explanation: Adds a click event listener to the button.
+Line 10:     message.textContent = "Button was clicked!";
+Explanation: Starts the function that runs after a click.
+Line 11: });
+Explanation: Changes the paragraph text.
+Line 12: </script>
+Explanation: Closes the function and event listener call.
+Line 13: </body>
+Explanation: Ends JavaScript.
+Line 14: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+Clicking the button displays Button was clicked!.
+
+================================================================================
+
+PROGRAM 16: Simple Calculator
+----------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<input id="a" type="number" placeholder="First number">
+<input id="b" type="number" placeholder="Second number">
+<button id="add">Add</button>
+<p id="result"></p>
+<script>
+const a = document.getElementById("a");
+const b = document.getElementById("b");
+const add = document.getElementById("add");
+const result = document.getElementById("result");
+add.addEventListener("click", function() {
+    const total = Number(a.value) + Number(b.value);
+    result.textContent = "Result: " + total;
+});
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <input id="a" type="number" placeholder="First number">
+Explanation: Creates a number input with id a.
+Line 5: <input id="b" type="number" placeholder="Second number">
+Explanation: Creates a number input with id b.
+Line 6: <button id="add">Add</button>
+Explanation: Creates an Add button.
+Line 7: <p id="result"></p>
+Explanation: Creates an empty paragraph for the result.
+Line 8: <script>
+Explanation: Starts JavaScript.
+Line 9: const a = document.getElementById("a");
+Explanation: Finds the first input.
+Line 10: const b = document.getElementById("b");
+Explanation: Finds the second input.
+Line 11: const add = document.getElementById("add");
+Explanation: Finds the Add button.
+Line 12: const result = document.getElementById("result");
+Explanation: Finds the result paragraph.
+Line 13: add.addEventListener("click", function() {
+Explanation: Adds a click event to the Add button.
+Line 14:     const total = Number(a.value) + Number(b.value);
+Explanation: Starts the click function.
+Line 15:     result.textContent = "Result: " + total;
+Explanation: Converts the first input value to a number and adds the second number.
+Line 16: });
+Explanation: Displays the total in the result paragraph.
+Line 17: </script>
+Explanation: Ends the function and event listener call.
+Line 18: </body>
+Explanation: Ends JavaScript.
+Line 19: </html>
+Explanation: Ends body.
+
+RESULT / WHAT TO OBSERVE:
+Enter two numbers and click Add. The page shows their sum.
+
+================================================================================
+
+PROGRAM 17: Form Validation
+--------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<input id="name" placeholder="Enter name">
+<button id="check">Check</button>
+<p id="message"></p>
+<script>
+const nameInput = document.getElementById("name");
+const check = document.getElementById("check");
+const message = document.getElementById("message");
+check.addEventListener("click", function() {
+    if (nameInput.value.trim() === "") {
+        message.textContent = "Name is required.";
+    } else {
+        message.textContent = "Thank you, " + nameInput.value;
+    }
+});
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <input id="name" placeholder="Enter name">
+Explanation: Creates a text input with id name.
+Line 5: <button id="check">Check</button>
+Explanation: Creates a Check button.
+Line 6: <p id="message"></p>
+Explanation: Creates an empty paragraph for messages.
+Line 7: <script>
+Explanation: Starts JavaScript.
+Line 8: const nameInput = document.getElementById("name");
+Explanation: Finds the name input.
+Line 9: const check = document.getElementById("check");
+Explanation: Finds the Check button.
+Line 10: const message = document.getElementById("message");
+Explanation: Finds the message paragraph.
+Line 11: check.addEventListener("click", function() {
+Explanation: Adds a click event to the Check button.
+Line 12:     if (nameInput.value.trim() === "") {
+Explanation: Starts the function.
+Line 13:         message.textContent = "Name is required.";
+Explanation: Checks whether the trimmed input is empty.
+Line 14:     } else {
+Explanation: Starts the true block.
+Line 15:         message.textContent = "Thank you, " + nameInput.value;
+Explanation: Shows an error message.
+Line 16:     }
+Explanation: Ends the true block.
+Line 17: });
+Explanation: Starts the false block.
+Line 18: </script>
+Explanation: Shows a thank-you message with the entered name.
+Line 19: </body>
+Explanation: Ends the false block.
+Line 20: </html>
+Explanation: Ends the function and event listener.
+
+RESULT / WHAT TO OBSERVE:
+An empty name shows an error; a filled name shows a thank-you message.
+
+================================================================================
+
+PROGRAM 18: Digital Counter
+--------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="count">0</h1>
+<button id="plus">+</button>
+<button id="minus">-</button>
+<script>
+let value = 0;
+const count = document.getElementById("count");
+document.getElementById("plus").addEventListener("click", function() {
+    value++;
+    count.textContent = value;
+});
+document.getElementById("minus").addEventListener("click", function() {
+    value--;
+    count.textContent = value;
+});
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <h1 id="count">0</h1>
+Explanation: Creates a heading showing 0 and gives it id count.
+Line 5: <button id="plus">+</button>
+Explanation: Creates the plus button.
+Line 6: <button id="minus">-</button>
+Explanation: Creates the minus button.
+Line 7: <script>
+Explanation: Starts JavaScript.
+Line 8: let value = 0;
+Explanation: Creates value and starts it at 0.
+Line 9: const count = document.getElementById("count");
+Explanation: Finds the count heading.
+Line 10: document.getElementById("plus").addEventListener("click", function() {
+Explanation: Finds the plus button and adds a click listener.
+Line 11:     value++;
+Explanation: Starts the plus function.
+Line 12:     count.textContent = value;
+Explanation: Increases value by 1.
+Line 13: });
+Explanation: Updates the displayed count.
+Line 14: document.getElementById("minus").addEventListener("click", function() {
+Explanation: Ends the plus function and listener.
+Line 15:     value--;
+Explanation: Finds the minus button and adds a click listener.
+Line 16:     count.textContent = value;
+Explanation: Starts the minus function.
+Line 17: });
+Explanation: Decreases value by 1.
+Line 18: </script>
+Explanation: Updates the displayed count.
+Line 19: </body>
+Explanation: Ends the minus function and listener.
+Line 20: </html>
+Explanation: Ends JavaScript.
+
+RESULT / WHAT TO OBSERVE:
+The + button increases the number and the - button decreases it.
+
+================================================================================
+
+PROGRAM 19: Simple To-Do List
+----------------------------
+
+COMPLETE CODE:
+<!DOCTYPE html>
+<html>
+<body>
+<input id="task" placeholder="Enter task">
+<button id="add">Add Task</button>
+<ul id="list"></ul>
+<script>
+const task = document.getElementById("task");
+const add = document.getElementById("add");
+const list = document.getElementById("list");
+add.addEventListener("click", function() {
+    const text = task.value.trim();
+    if (text === "") {
+        alert("Enter a task");
+        return;
+    }
+    const item = document.createElement("li");
+    item.textContent = text;
+    list.appendChild(item);
+    task.value = "";
+});
+</script>
+</body>
+</html>
+
+LINE-BY-LINE EXPLANATION:
+Line 1: <!DOCTYPE html>
+Explanation: Declares HTML5.
+Line 2: <html>
+Explanation: Starts document.
+Line 3: <body>
+Explanation: Starts body.
+Line 4: <input id="task" placeholder="Enter task">
+Explanation: Creates an input for the task.
+Line 5: <button id="add">Add Task</button>
+Explanation: Creates an Add Task button.
+Line 6: <ul id="list"></ul>
+Explanation: Creates an empty unordered list.
+Line 7: <script>
+Explanation: Starts JavaScript.
+Line 8: const task = document.getElementById("task");
+Explanation: Finds the task input.
+Line 9: const add = document.getElementById("add");
+Explanation: Finds the Add button.
+Line 10: const list = document.getElementById("list");
+Explanation: Finds the list.
+Line 11: add.addEventListener("click", function() {
+Explanation: Adds a click listener to the Add button.
+Line 12:     const text = task.value.trim();
+Explanation: Starts the function.
+Line 13:     if (text === "") {
+Explanation: Gets the input text and removes extra spaces at the ends.
+Line 14:         alert("Enter a task");
+Explanation: Checks whether the text is empty.
+Line 15:         return;
+Explanation: Starts the true block.
+Line 16:     }
+Explanation: Shows an alert asking for a task.
+Line 17:     const item = document.createElement("li");
+Explanation: Stops this function immediately.
+Line 18:     item.textContent = text;
+Explanation: Ends the true block.
+Line 19:     list.appendChild(item);
+Explanation: Creates a new list-item element.
+Line 20:     task.value = "";
+Explanation: Puts the task text inside the new item.
+Line 21: });
+Explanation: Adds the item to the list.
+Line 22: </script>
+Explanation: Clears the input box.
+Line 23: </body>
+Explanation: Ends the function and listener.
+Line 24: </html>
+Explanation: Ends JavaScript.
+
+RESULT / WHAT TO OBSERVE:
+Type a task and click Add Task. Each task appears as a new list item.
+
+================================================================================
