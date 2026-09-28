@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockChain File Encryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🔐</span>
+                <span class="logo-text">CryptoChain</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" onclick="goToSection('home')">Home</a></li>
+                <li><a href="#encrypt" class="nav-link" onclick="goToSection('encrypt')">Encrypt</a></li>
+                <li><a href="#decrypt" class="nav-link" onclick="goToSection('decrypt')">Decrypt</a></li>
+                <li><a href="#verification" class="nav-link" onclick="goToSection('verification')">Tools</a></li>
+                <li><a href="#blockchain" class="nav-link" onclick="goToSection('blockchain')">Blockchain</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Secure Your Files with <span class="gradient-text">Blockchain</span></h1>
+                <p class="hero-subtitle">Military-grade AES-256 encryption with blockchain verification</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="goToSection('encrypt')">Start Encrypting</button>
+                    <button class="btn btn-secondary" onclick="goToSection('blockchain')">View Blockchain</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3 id="stat-ops">0</h3>
+                    <p>Total Operations</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="stat-encrypted">0</h3>
+                    <p>Files Encrypted</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="stat-decrypted">0</h3>
+                    <p>Files Decrypted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENCRYPT SECTION -->
+    <section id="encrypt" class="section encrypt-section">
+        <div class="container">
+            <h2 class="section-title">Encrypt Your File</h2>
+            <div class="content-grid">
+                <div class="form-card">
+                    <form id="encryptForm" class="encrypt-form">
+                        <div class="form-group">
+                            <label for="fileInput">Select File</label>
+                            <div class="file-input-wrapper">
+                                <input type="file" id="fileInput" name="file" required accept="*/*">
+                                <span class="file-input-label">Choose a file</span>
+                                <span class="file-input-icon">📁</span>
+                            </div>
+                            <div id="fileInfo" class="file-info"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Encryption Password</label>
+                            <div class="password-input-wrapper">
+                                <input type="password" id="password" name="password" placeholder="Enter strong password" required minlength="6">
+                                <button type="button" class="toggle-password" onclick="togglePassword('password')">👁️</button>
+                            </div>
+                            <div class="password-strength">
+                                <div class="strength-bar"></div>
+                                <span class="strength-text"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <div class="password-input-wrapper">
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required minlength="6">
+                                <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword')">👁️</button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span class="btn-icon">🔒</span>
+                            Encrypt File
+                        </button>
+                    </form>
+                </div>
+
+                <div class="info-card">
+                    <h3>How It Works</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">1️⃣</span>
+                            <div>
+                                <h4>Select File</h4>
+                                <p>Choose any file to encrypt (documents, images, videos, etc.)</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">2️⃣</span>
+                            <div>
+                                <h4>Set Password</h4>
+                                <p>Create a strong password to protect your file</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔐</span>
+                            <div>
+                                <h4>AES-256 Encryption</h4>
+                                <p>Military-grade encryption secures your data</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⛓️</span>
+                            <div>
+                                <h4>Blockchain Recorded</h4>
+                                <p>Operation logged in tamper-proof blockchain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DECRYPT SECTION -->
+    <section id="decrypt" class="section decrypt-section">
+        <div class="container">
+            <h2 class="section-title">Decrypt Your File</h2>
+            <div class="content-grid">
+                <div class="form-card">
+                    <form id="decryptForm" class="decrypt-form">
+                        <div class="form-group">
+                            <label for="encryptedFile">Select Encrypted File</label>
+                            <div class="file-input-wrapper">
+                                <input type="file" id="encryptedFile" name="file" required accept=".enc,*/*">
+                                <span class="file-input-label">Choose encrypted file</span>
+                                <span class="file-input-icon">📁</span>
+                            </div>
+                            <div id="encFileInfo" class="file-info"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="originalFilename">Original Filename</label>
+                            <input type="text" id="originalFilename" name="originalFilename" placeholder="e.g., document.pdf" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="decryptPassword">Decryption Password</label>
+                            <div class="password-input-wrapper">
+                                <input type="password" id="decryptPassword" name="password" placeholder="Enter password" required>
+                                <button type="button" class="toggle-password" onclick="togglePassword('decryptPassword')">👁️</button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span class="btn-icon">🔓</span>
+                            Decrypt & Download
+                        </button>
+                    </form>
+                </div>
+
+                <div class="info-card">
+                    <h3>Decryption Steps</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">📥</span>
+                            <div>
+                                <h4>Upload Encrypted File</h4>
+                                <p>Select the .enc file you received</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📝</span>
+                            <div>
+                                <h4>Original Filename</h4>
+                                <p>Enter the original filename to preserve</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔑</span>
+                            <div>
+                                <h4>Enter Password</h4>
+                                <p>Use the correct password to decrypt</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⬇️</span>
+                            <div>
+                                <h4>Download Safely</h4>
+                                <p>Original file downloads automatically</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILE VERIFICATION SECTION -->
+    <section id="verification" class="section verification-section">
+        <div class="container">
+            <h2 class="section-title">🔍 File Verification & Tools</h2>
+            <div class="content-grid">
+                <div class="form-card">
+                    <h3>📊 File Hash Calculator</h3>
+                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">Calculate SHA-256 hash of your file to verify integrity</p>
+                    <div class="form-group">
+                        <label for="verifyFileInput">Select File</label>
+                        <div class="file-input-wrapper">
+                            <input type="file" id="verifyFileInput" name="file" accept="*/*">
+                            <span class="file-input-label">Choose a file to hash</span>
+                            <span class="file-input-icon">📁</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-large" onclick="calculateFileHash()">
+                        <span class="btn-icon">🔐</span>
+                        Calculate Hash
+                    </button>
+                </div>
+
+                <div class="form-card">
+                    <h3>📊 File Analysis</h3>
+                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">Get detailed information about any file</p>
+                    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: var(--text-secondary);">Use the file selector above to analyze files</p>
+                    <button class="btn btn-primary btn-large" onclick="analyzeFile()">
+                        <span class="btn-icon">📋</span>
+                        Analyze File
+                    </button>
+                </div>
+
+                <div class="form-card">
+                    <h3>🔑 Crypto Details</h3>
+                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">View encryption algorithms and blockchain details</p>
+                    <button class="btn btn-secondary btn-large" onclick="showDetailedCryptoInfo()" style="width: 100%;">
+                        <span class="btn-icon">🛡️</span>
+                        Show Crypto Details
+                    </button>
+                </div>
+
+                <div class="form-card">
+                    <h3>🔑 Encryption Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">🔐</span>
+                            <div>
+                                <h4>AES-256 Encryption</h4>
+                                <p>Military-grade encryption algorithm</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔑</span>
+                            <div>
+                                <h4>PBKDF2 Key Derivation</h4>
+                                <p>100,000 iterations for secure key generation</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💾</span>
+                            <div>
+                                <h4>SHA-256 Hashing</h4>
+                                <p>Cryptographic file integrity verification</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⛓️</span>
+                            <div>
+                                <h4>Blockchain Recording</h4>
+                                <p>All operations recorded in tamper-proof ledger</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCKCHAIN SECTION -->
+    <section id="blockchain" class="section blockchain-section">
+        <div class="container">
+            <h2 class="section-title">Blockchain Ledger</h2>
+            
+            <div class="blockchain-controls">
+                <button class="btn btn-secondary" onclick="loadBlockchain()">🔄 Refresh Ledger</button>
+                <button class="btn btn-secondary" onclick="verifyBlockchain()">✅ Verify Chain</button>
+                <button class="btn btn-secondary" onclick="exportBlockchain()">📥 Export JSON</button>
+                <button class="btn btn-secondary" onclick="showCryptoStats()">📊 Statistics</button>
+                <button class="btn btn-secondary" onclick="searchTransactions()">🔍 Search</button>
+                <button class="btn btn-secondary" onclick="resetSearch()">🔄 Reset</button>
+            </div>
+
+            <div class="blockchain-status" id="blockchainStatus">
+                <p>Loading blockchain...</p>
+            </div>
+
+            <div class="blockchain-stats" id="blockchainStats">
+                <!-- Stats will be loaded here -->
+            </div>
+
+            <div class="blockchain-ledger" id="blockchainLedger">
+                <!-- Blockchain will be rendered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTIFICATIONS -->
+    <div id="notification" class="notification"></div>
+
+    <footer class="footer">
+        <p>&copy; 2026 BlockChain File Encryption. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

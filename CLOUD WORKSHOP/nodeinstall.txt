@@ -1,0 +1,7 @@
+sudo apt update
+sudo apt install curl -y
+curl -fsSl https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install nodejs -y
+sudo apt install npm
+git clone ""
+node server.js

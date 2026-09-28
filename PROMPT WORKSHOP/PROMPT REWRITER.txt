@@ -1,0 +1,38 @@
+1
+
+!pip install -q streamlit transformers torch sentencepiece pyngrok
+
+2
+
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+import torch
+
+model_id = "google/flan-t5-large"
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_id).to("cuda")
+
+print("Model and tokenizer loaded successfully.")
+
+3
+
+def rewrite_prompt(user_prompt):
+    instruction = f"Rewrite the following prompt to make it clear, detailed, and specific. Original Prompt: {user_prompt} Improved Prompt:"
+
+    inputs = tokenizer(instruction, return_tensors="pt").to("cuda")
+    
+    outputs = model.generate(
+        input_ids=inputs["input_ids"],
+        attention_mask=inputs["attention_mask"],
+        max_new_tokens=150,
+        do_sample=True,
+        temperature=0.7,
+        top_p=0.9
+    )
+
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+4
+
+test_prompt = "explain about python"
+improved = rewrite_prompt(test_prompt)
+print(f"Original: {test_prompt}")
+print(f"Improved: {improved}")

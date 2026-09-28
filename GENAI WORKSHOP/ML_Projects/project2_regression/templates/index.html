@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+<section class="hero">
+  <p class="pill">{{ P.kind }} · Made for India 🇮🇳</p>
+  <h1><span>{{ P.h1a }}</span><span>{{ P.h1b }}</span></h1>
+  <p class="sub">{{ P.sub }}</p>
+</section>
+<section class="cards">
+{% for c in cards %}
+  <a class="card tilt" href="/model/{{ c.key }}">
+    <div class="big-ico">{{ c.icon }}</div>
+    <h2>{{ c.title }}</h2><p>{{ c.tagline }}</p>
+    <div class="chips"><span>{{ 'Classification' if c.task=='clf' else 'Regression' }}</span><span>{{ c.nf }} inputs</span><span>{{ '{:,}'.format(c.rows) }} records</span></div>
+    <div class="stat"><b data-count="{{ '%.1f'|format(c.metric[1]) }}" data-suffix="{{ c.metric[2] }}">0</b><small>{{ c.metric[0] }} on unseen test data</small></div>
+    <span class="go">Open predictor →</span>
+  </a>
+{% endfor %}
+</section>
+<section class="steps">
+  <div><h3>Tune the inputs</h3><p>Sliders and dropdowns use Indian cities, brands, fuel types and seasons.</p></div>
+  <div><h3>Get an instant prediction</h3><p>Animated result with confidence range, advice and a what-if curve.</p></div>
+  <div><h3>Inspect the model</h3><p>Feature importance, accuracy charts, history export and dataset download.</p></div>
+</section>
+{% endblock %}

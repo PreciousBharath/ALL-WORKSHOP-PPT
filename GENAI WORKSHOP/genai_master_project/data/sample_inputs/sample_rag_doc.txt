@@ -1,0 +1,9 @@
+# Generative AI Architecture & RAG Handbook
+
+Generative AI (GenAI) leverages deep learning architectures such as Transformers, Diffusion Models, and Variational Autoencoders (VAEs) to synthesize human-like text, images, code, and audio.
+
+## Key Architectures & Concepts:
+1. **Transformer Networks**: Utilizes multi-head self-attention mechanisms to model long-range contextual dependencies in sequence data.
+2. **Retrieval-Augmented Generation (RAG)**: Connects LLMs to external vector databases (such as Pinecone, FAISS, or ChromaDB). RAG converts text into dense vector embeddings using models like SentenceTransformers, performs cosine similarity searches, and injects relevant context directly into the LLM prompt window.
+3. **Prompt Engineering**: Techniques including Zero-Shot, Few-Shot, Chain-of-Thought (CoT), and ReAct (Reasoning + Acting) structure inputs to maximize LLM reasoning accuracy.
+4. **Safety & Guardrails**: System components that scrub PII (Personally Identifiable Information), block jailbreaks, and filter prompt injections.

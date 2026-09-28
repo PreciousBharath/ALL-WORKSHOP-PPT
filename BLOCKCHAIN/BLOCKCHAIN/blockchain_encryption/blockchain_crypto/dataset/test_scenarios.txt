@@ -1,0 +1,99 @@
+ENCRYPTION TEST SCENARIOS
+=========================
+
+Test Case 1: Basic File Encryption
+-----------------------------------
+File: sample_document.txt
+Password: Test123!
+Expected Result: File encrypted successfully
+Action: Upload file → Enter password → Click Encrypt
+
+Test Case 2: JSON File Encryption
+----------------------------------
+File: user_credentials.json
+Password: SecurePass2026!
+Expected Result: File encrypted successfully
+Action: Upload file → Enter password → Click Encrypt
+
+Test Case 3: CSV File Encryption
+---------------------------------
+File: financial_report.csv
+Password: FinanceData#Secure
+Expected Result: File encrypted successfully
+Action: Upload file → Enter password → Click Encrypt
+
+Test Case 4: Configuration File Encryption
+--------------------------------------------
+File: config.ini
+Password: Config@Secure2026
+Expected Result: File encrypted successfully
+Action: Upload file → Enter password → Click Encrypt
+
+Test Case 5: Decryption Testing
+--------------------------------
+File: sample_document.txt.enc
+Password: Test123!
+Original Filename: sample_document.txt
+Expected Result: File decrypted successfully
+Action: Upload encrypted file → Enter filename → Enter password → Click Decrypt
+
+Test Case 6: Hash Verification
+-------------------------------
+File: Any file from dataset
+Action: 
+  1. Calculate hash of original file
+  2. Encrypt file
+  3. Decrypt file
+  4. Calculate hash of decrypted file
+  5. Compare hashes
+Expected Result: Hashes should match exactly
+
+Test Case 7: Weak Password Rejection
+-------------------------------------
+File: sample_document.txt
+Password: abc
+Expected Result: Error - "Password must be at least 6 characters"
+Action: Upload file → Enter weak password → Click Encrypt
+
+Test Case 8: Password Mismatch
+------------------------------
+File: sample_document.txt
+Password 1: MyPassword123!
+Password 2: MyPassword124!
+Expected Result: Error - "Passwords do not match"
+Action: Upload file → Enter two different passwords → Click Encrypt
+
+Test Case 9: Blockchain Recording
+----------------------------------
+Action:
+  1. Encrypt multiple files
+  2. Go to Blockchain section
+  3. Click "Refresh Ledger"
+Expected Result: All operations recorded in blockchain
+
+Test Case 10: Chain Verification
+---------------------------------
+Action:
+  1. Perform several encryption/decryption operations
+  2. Click "Verify Chain"
+Expected Result: ✅ Blockchain is valid
+
+Test Case 11: File Analysis
+---------------------------
+File: Any file from dataset
+Action: Go to Tools → Click "Analyze File"
+Expected Result: File information displayed with SHA-256 hash
+
+Test Case 12: Crypto Details
+------------------------------
+Action: Go to Tools → Click "Show Crypto Details"
+Expected Result: Display encryption algorithms and blockchain details
+
+PASS/FAIL CRITERIA
+==================
+✓ PASS: File successfully encrypted and can be decrypted
+✓ PASS: Hash of original and decrypted files match
+✓ PASS: Operation recorded in blockchain
+✓ PASS: Blockchain verification succeeds
+✓ PASS: Error messages displayed for invalid inputs
+✗ FAIL: Any deviation from expected results

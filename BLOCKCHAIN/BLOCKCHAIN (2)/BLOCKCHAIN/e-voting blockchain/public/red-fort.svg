@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Red Fort in Delhi">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#75c9ed"/><stop offset="1" stop-color="#e6b877"/></linearGradient>
+    <linearGradient id="sandstone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c8653d"/><stop offset="1" stop-color="#7d3025"/></linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a7462f"/><stop offset="1" stop-color="#6e2822"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1320" cy="160" r="90" fill="#fff1bd" opacity=".55" filter="url(#soft)"/>
+  <path d="M0 650 Q400 560 800 650 T1600 640 V900 H0Z" fill="#274936" opacity=".9"/>
+  <path d="M0 700 Q400 630 800 700 T1600 690 V900 H0Z" fill="#172d29"/>
+  <g fill="url(#wall)" stroke="#e5965c" stroke-width="7">
+    <path d="M105 620 L155 305 L260 270 L300 620Z"/>
+    <path d="M1300 620 L1340 270 L1445 305 L1495 620Z"/>
+    <path d="M235 580 L275 350 L1325 350 L1365 580Z"/>
+    <path d="M160 620 L180 470 L1420 470 L1440 620Z"/>
+  </g>
+  <g fill="#d77a4a" stroke="#f2b477" stroke-width="6">
+    <path d="M220 320 L220 220 L270 180 L320 220 L320 320Z"/><path d="M1280 320 L1280 220 L1330 180 L1380 220 L1380 320Z"/>
+    <path d="M500 350 L520 255 L570 220 L620 255 L640 350Z"/><path d="M960 350 L980 255 L1030 220 L1080 255 L1100 350Z"/>
+  </g>
+  <g fill="#f0b56f" stroke="#8a3527" stroke-width="7">
+    <path d="M590 620 V480 Q800 360 1010 480 V620Z"/>
+    <path d="M650 620 V510 Q800 425 950 510 V620Z" fill="#51201d"/>
+    <path d="M760 620 V535 Q800 495 840 535 V620Z" fill="#e8a05e"/>
+  </g>
+  <g fill="#8a3527" opacity=".9">
+    <path d="M300 400 h45 v95 h-45z M390 400 h45 v95 h-45z M480 400 h45 v95 h-45z M575 400 h45 v95 h-45z M980 400 h45 v95 h-45z M1070 400 h45 v95 h-45z M1160 400 h45 v95 h-45z M1250 400 h45 v95 h-45z"/>
+  </g>
+  <path d="M0 620 H1600 V900 H0Z" fill="#151d22" opacity=".42"/>
+  <g fill="#f4c27a"><path d="M730 250 h140 l-28 -42 h-84z"/><path d="M250 180 h40 l-10 -30 h-20z"/><path d="M1310 180 h40 l-10 -30 h-20z"/></g>
+</svg>

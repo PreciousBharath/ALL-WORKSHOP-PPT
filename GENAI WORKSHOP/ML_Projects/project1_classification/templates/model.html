@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}{{ s.title }} · {{ P.name }}{% endblock %}
+{% block body %}
+<section class="head">
+  <div><h1>{{ s.icon }} {{ s.title }}</h1><p class="sub">{{ s.tagline }}</p></div>
+  <div class="chips">
+    {% if s.task == 'clf' %}<span>Accuracy {{ '%.1f'|format(metrics.accuracy*100) }}%</span><span>F1 {{ '%.2f'|format(metrics.f1) }}</span>
+    {% else %}<span>R² {{ '%.3f'|format(metrics.r2) }}</span><span>MAE ₹{{ '%.2f'|format(metrics.mae) }} L</span>{% endif %}
+    <a href="/download/{{ key }}">⬇ Dataset CSV</a>
+  </div>
+</section>
+<section class="grid">
+  <form class="card" id="form" onsubmit="return false">
+    <div class="fields" id="fields"></div>
+    <div class="btns">
+      <button class="btn primary" id="go">{{ '🔮 Predict' }}</button>
+      <button class="btn" id="sample" type="button">Load sample</button>
+      <button class="btn" id="rand" type="button">🎲 Random</button>
+    </div>
+  </form>
+  <aside class="card result sticky" id="result">
+    <div class="empty" id="empty"><div class="pulse">{{ s.icon }}</div><p>Fill the details and press <b>Predict</b>.</p></div>
+    <div id="out" hidden></div>
+  </aside>
+</section>
+<section class="grid2">
+  <div class="card"><h3>What-if: {{ s.sweep_title }}</h3><canvas id="whatif" height="150"></canvas></div>
+  <div class="card"><h3>What drives this model</h3><canvas id="imp" height="150"></canvas></div>
+  <div class="card"><h3>{{ 'Confusion matrix (test set)' if s.task=='clf' else 'Actual vs predicted (₹ lakh)' }}</h3><div id="second"><canvas id="c2" height="150"></canvas></div></div>
+  <div class="card"><div class="row"><h3>Prediction history</h3><span><button class="btn sm" id="exp">Export CSV</button> <button class="btn sm" id="clr">Clear</button></span></div><div id="hist" class="hist"></div></div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>window.APP={{ s|tojson }};</script>
+<script src="{{ url_for('static', filename='model.js') }}"></script>
+{% endblock %}

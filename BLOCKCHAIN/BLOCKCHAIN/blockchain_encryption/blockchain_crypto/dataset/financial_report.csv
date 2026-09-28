@@ -1,0 +1,16 @@
+Date,Transaction_ID,Type,Amount_USD,Status,Description
+2026-08-01,TXN_001,Encryption,50.00,Completed,File encryption service
+2026-08-02,TXN_002,Decryption,25.00,Completed,File decryption service
+2026-08-03,TXN_003,Verification,10.00,Completed,Blockchain verification
+2026-08-04,TXN_004,Encryption,100.00,Completed,Bulk encryption service
+2026-08-05,TXN_005,Analysis,15.00,Completed,File analysis service
+2026-08-06,TXN_006,Backup,75.00,Completed,Cloud backup service
+2026-08-07,TXN_007,Encryption,50.00,Pending,File encryption service
+2026-08-08,TXN_008,Decryption,25.00,Completed,File decryption service
+2026-08-09,TXN_009,Storage,200.00,Completed,Extended storage plan
+2026-08-10,TXN_010,Support,0.00,Completed,Technical support ticket
+2026-08-11,TXN_011,Encryption,75.00,Completed,High-priority encryption
+2026-08-12,TXN_012,Verification,10.00,Completed,Chain integrity check
+2026-08-13,TXN_013,Decryption,30.00,Completed,Multiple file decryption
+2026-08-14,TXN_014,Encryption,60.00,Completed,Standard encryption
+2026-08-15,TXN_015,Analysis,20.00,Completed,Advanced file analysis

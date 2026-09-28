@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}{{ P.name }}{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{--a:{{ P.a }};--b:{{ P.b }}}html[data-theme=dark]{--bg:{{ P.bg }}}html[data-theme=light]{--bg:{{ P.light }}}</style>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script>document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'</script>
+</head>
+<body>
+<div class="blobs"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+<header class="nav">
+  <a class="brand" href="/"><span class="logo">{{ P.emoji }}</span>{{ P.name }}</a>
+  <nav>{% for k, t, ic in P.nav %}<a href="/model/{{ k }}" class="{{ 'on' if key is defined and key == k }}">{{ ic }} {{ t }}</a>{% endfor %}
+  <button id="themeBtn" class="icon" title="Toggle light / dark">◐</button></nav>
+</header>
+<main>{% block body %}{% endblock %}</main>
+<footer>Built with Flask + scikit-learn · Educational project · Values in ₹ (INR) · {{ P.name }}</footer>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+{% block scripts %}{% endblock %}
+</body></html>

@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+client/dist/
+coverage/
+artifacts/
+cache/
+blockchain/typechain-types/
+server/uploads/
+*.log
+.DS_Store
+.vscode/settings.json

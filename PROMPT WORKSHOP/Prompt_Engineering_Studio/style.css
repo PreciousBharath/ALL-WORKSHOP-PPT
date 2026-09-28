@@ -1,0 +1,251 @@
+/* ==========================================================================
+   PROMPT ENGINEERING STUDIO - PREMIUM GLASSMORPHISM DESIGN SYSTEM
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap');
+
+/* Global Root Variables */
+:root {
+    --bg-primary: #0b0f19;
+    --bg-secondary: #111827;
+    --card-bg: rgba(17, 24, 39, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    --accent-purple: #8b5cf6;
+    --accent-indigo: #6366f1;
+    --accent-pink: #ec4899;
+    --accent-cyan: #06b6d4;
+    --accent-green: #10b981;
+    --accent-amber: #f59e0b;
+
+    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+    --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    --gradient-success: linear-gradient(135deg, #059669 0%, #10b981 100%);
+
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-code: 'Fira Code', monospace;
+}
+
+/* Streamlit Main App Override */
+.stApp {
+    background: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(236, 72, 153, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.08) 0%, transparent 60%),
+                var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+}
+
+/* Custom Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--text-primary);
+}
+
+/* Main Hero Section */
+.hero-container {
+    background: var(--gradient-hero);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(16px);
+    border-radius: 24px;
+    padding: 3rem 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--glass-shadow);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 750px;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.6;
+}
+
+/* Custom Glass Cards */
+.glass-card {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    box-shadow: var(--glass-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.25);
+    border-color: rgba(139, 92, 246, 0.4);
+}
+
+/* Metric Cards */
+.metric-card-custom {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 1.25rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.metric-value-custom {
+    font-size: 2.25rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.25rem 0;
+}
+
+.metric-label-custom {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+/* Prompt Comparison Cards */
+.prompt-box-original {
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    border-radius: 14px;
+    padding: 1.25rem;
+    color: #fca5a5;
+    font-family: var(--font-body);
+}
+
+.prompt-box-improved {
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 14px;
+    padding: 1.25rem;
+    color: #6ee7b7;
+    font-family: var(--font-body);
+}
+
+/* Streamlit Native Overrides */
+div.stButton > button {
+    background: var(--gradient-primary) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.65rem 1.5rem !important;
+    font-weight: 600 !important;
+    font-family: var(--font-heading) !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.02em !important;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35) !important;
+    transition: all 0.25s ease !important;
+    width: 100%;
+}
+
+div.stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 22px rgba(168, 85, 247, 0.5) !important;
+    opacity: 0.95 !important;
+}
+
+/* Text Area Styling */
+.stTextArea textarea {
+    background: rgba(17, 24, 39, 0.8) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 14px !important;
+    color: var(--text-primary) !important;
+    font-family: var(--font-body) !important;
+    font-size: 1rem !important;
+    padding: 1rem !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: var(--accent-indigo) !important;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25) !important;
+}
+
+/* Sidebar Custom Styling */
+section[data-testid="stSidebar"] {
+    background-color: rgba(11, 15, 25, 0.95) !important;
+    border-right: 1px solid var(--glass-border) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+/* Table Styling */
+.dataframe {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    background: rgba(17, 24, 39, 0.6) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+.dataframe th {
+    background: rgba(99, 102, 241, 0.2) !important;
+    color: #e0e7ff !important;
+    font-weight: 700 !important;
+    padding: 10px 14px !important;
+    text-align: left !important;
+}
+
+.dataframe td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    padding: 10px 14px !important;
+    color: #d1d5db !important;
+    font-family: var(--font-code) !important;
+    font-size: 0.9rem !important;
+}
+
+/* Status Badges */
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-purple { background: rgba(139, 92, 246, 0.2); color: #c084fc; border: 1px solid rgba(139, 92, 246, 0.4); }
+.badge-green { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4); }
+.badge-amber { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); }
+.badge-cyan { background: rgba(6, 182, 212, 0.2); color: #22d3ee; border: 1px solid rgba(6, 182, 212, 0.4); }
+
+/* Diff Highlighting */
+.diff-add {
+    background-color: rgba(16, 185, 129, 0.25);
+    color: #6ee7b7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.diff-del {
+    background-color: rgba(239, 68, 68, 0.25);
+    color: #fca5a5;
+    text-decoration: line-through;
+    padding: 2px 6px;
+    border-radius: 4px;
+}

@@ -1,0 +1,79 @@
+{
+  "organization": "CryptoChain Security Solutions",
+  "website": "https://www.cryptochain.com",
+  "contact": "contact@cryptochain.com",
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "title": "Chief Technology Officer",
+      "department": "Engineering",
+      "email": "alice@cryptochain.com",
+      "start_date": "2024-01-01",
+      "salary_range": "$150,000 - $200,000"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "title": "Senior Security Engineer",
+      "department": "Security",
+      "email": "bob@cryptochain.com",
+      "start_date": "2024-02-15",
+      "salary_range": "$120,000 - $160,000"
+    },
+    {
+      "id": 3,
+      "name": "Carol Davis",
+      "title": "DevOps Engineer",
+      "department": "Infrastructure",
+      "email": "carol@cryptochain.com",
+      "start_date": "2024-03-01",
+      "salary_range": "$100,000 - $140,000"
+    },
+    {
+      "id": 4,
+      "name": "David Wilson",
+      "title": "Full Stack Developer",
+      "department": "Engineering",
+      "email": "david@cryptochain.com",
+      "start_date": "2024-04-10",
+      "salary_range": "$90,000 - $130,000"
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "P001",
+      "name": "Blockchain File Encryption System",
+      "status": "Active",
+      "start_date": "2025-06-01",
+      "estimated_completion": "2026-12-31",
+      "budget": "$500,000",
+      "team_size": 12
+    },
+    {
+      "project_id": "P002",
+      "name": "Mobile Application Development",
+      "status": "Planning",
+      "start_date": "2026-09-01",
+      "estimated_completion": "2027-06-30",
+      "budget": "$300,000",
+      "team_size": 8
+    },
+    {
+      "project_id": "P003",
+      "name": "AI-Powered Threat Detection",
+      "status": "Research",
+      "start_date": "2026-07-15",
+      "estimated_completion": "2027-12-31",
+      "budget": "$400,000",
+      "team_size": 6
+    }
+  ],
+  "certifications": [
+    "ISO 27001:2013",
+    "SOC 2 Type II",
+    "GDPR Compliant",
+    "HIPAA Certified",
+    "PCI DSS Level 1"
+  ]
+}
